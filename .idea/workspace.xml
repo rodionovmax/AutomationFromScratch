@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22453a9f-b156-4b18-a3b1-a3d12d2fc61a" name="Default Changelist" comment="" />
+    <list default="true" id="22453a9f-b156-4b18-a3b1-a3d12d2fc61a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,13 +26,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="14" />
-          <entry key="java" value="11897" />
+          <entry key="java" value="12370" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11897" />
+          <entry key="JAVA" value="12370" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="9" />
         </counts>
@@ -82,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="47" column="88" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="88" />
+            <state relative-caret-position="262">
+              <caret line="50" column="82" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -91,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MyTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="331">
+              <caret line="88" column="5" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,8 +137,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+            <state relative-caret-position="472">
+              <caret line="150" column="12" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,6 +199,9 @@
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -213,12 +220,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ConditionsHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/Photos.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/HowItWorks.java" />
         <option value="$PROJECT_DIR$/src/test/java/LessonFourTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
         <option value="$PROJECT_DIR$/src/test/java/Conditions.java" />
       </list>
     </option>
@@ -235,6 +242,7 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -287,7 +295,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556195367363" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556253916391" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -311,7 +319,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Conditions.test10">
+  <component name="RunManager" selected="TestNG.Conditions.openAllLinksInHeader">
+    <configuration name="Conditions.openAllLinksInHeader" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.romanceabroad" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Conditions" />
+      <option name="METHOD_NAME" value="openAllLinksInHeader" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Conditions.test10" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
@@ -348,18 +368,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LessonFourTests.verifyHowItWorksSideMenu" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com.romanceabroad" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LessonFourTests" />
-      <option name="METHOD_NAME" value="verifyHowItWorksSideMenu" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyTests.test7" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
@@ -373,19 +381,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.LessonFourTests.verifyHowItWorksSideMenu" />
       <item itemvalue="TestNG.MyTests.test7" />
       <item itemvalue="TestNG.Conditions.test8" />
       <item itemvalue="TestNG.Conditions.test9" />
       <item itemvalue="TestNG.Conditions.test10" />
+      <item itemvalue="TestNG.Conditions.openAllLinksInHeader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Conditions.openAllLinksInHeader" />
         <item itemvalue="TestNG.Conditions.test10" />
         <item itemvalue="TestNG.Conditions.test9" />
         <item itemvalue="TestNG.Conditions.test8" />
         <item itemvalue="TestNG.MyTests.test7" />
-        <item itemvalue="TestNG.LessonFourTests.verifyHowItWorksSideMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -403,27 +411,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LessonFourTests_verifyHowItWorksSideMenu - 2019.04.23 at 23h 14m 27s.xml">
-      <configuration name="LessonFourTests.verifyHowItWorksSideMenu" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LessonFourTests_verifyHowItWorksSideMenu - 2019.04.23 at 23h 29m 31s.xml">
-      <configuration name="LessonFourTests.verifyHowItWorksSideMenu" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LessonFourTests_verifyHowItWorksSideMenu - 2019.04.23 at 23h 31m 21s.xml">
-      <configuration name="LessonFourTests.verifyHowItWorksSideMenu" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LessonFourTests_verifyHowItWorksSideMenu - 2019.04.23 at 23h 39m 10s.xml">
-      <configuration name="LessonFourTests.verifyHowItWorksSideMenu" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LessonFourTests_verifyHowItWorksSideMenu - 2019.04.23 at 23h 42m 01s.xml">
-      <configuration name="LessonFourTests.verifyHowItWorksSideMenu" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyTests_test7 - 2019.04.25 at 00h 41m 44s.xml">
-      <configuration name="MyTests.test7" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyTests_test7 - 2019.04.25 at 00h 49m 46s.xml">
-      <configuration name="MyTests.test7" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Conditions_test8 - 2019.04.25 at 00h 55m 43s.xml">
       <configuration name="Conditions.test8" configurationId="TestNG" />
     </history-entry>
@@ -433,9 +420,31 @@
     <history-entry file="Conditions_test10 - 2019.04.25 at 08h 22m 36s.xml">
       <configuration name="Conditions.test10" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Conditions_test10 - 2019.04.25 at 22h 45m 17s.xml">
+      <configuration name="Conditions.test10" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_test10 - 2019.04.25 at 22h 45m 49s.xml">
+      <configuration name="Conditions.test10" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_openAllLinksInHeader - 2019.04.25 at 23h 42m 14s.xml">
+      <configuration name="Conditions.openAllLinksInHeader" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_openAllLinksInHeader - 2019.04.25 at 23h 46m 29s.xml">
+      <configuration name="Conditions.openAllLinksInHeader" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_openAllLinksInHeader - 2019.04.25 at 23h 56m 08s.xml">
+      <configuration name="Conditions.openAllLinksInHeader" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_openAllLinksInHeader - 2019.04.26 at 00h 32m 49s.xml">
+      <configuration name="Conditions.openAllLinksInHeader" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Conditions_openAllLinksInHeader - 2019.04.26 at 00h 34m 56s.xml">
+      <configuration name="Conditions.openAllLinksInHeader" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -564,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="47" column="88" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ConditionsHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -618,16 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LessonFourTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-113">
@@ -638,10 +630,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="88" column="5" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
-          <caret line="104" column="44" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+          <caret line="50" column="82" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="150" column="12" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

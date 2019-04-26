@@ -46,6 +46,10 @@ public class Locators {
     public static final By CLOSE_PICTURE = By.xpath("//div[@id='user_load_content_close328']/i[@class='fa fa-times']");
     public static final By TAB_HOW_IT_WORKS = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
     public static final By HOW_IT_WORKS_SIDE_MENU = By.cssSelector(".inside.account_menu");
+    public static final By TITLE_OF_PAGE = By.xpath("//h1");
+    public static final By TAB_OF_MAIN_PAGE = By.xpath("//ul[@class='navbar-nav']//li");
+    public static final By IMAGES = By.xpath("//a[@class='g-pic-border g-rounded']");
+
 
 
 

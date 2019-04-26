@@ -1,3 +1,5 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -6,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class Conditions {
+public class Conditions extends BaseUI{
 
 
     // Condition for Int
@@ -95,16 +97,57 @@ public class Conditions {
         String phrase = "Melon inside list";
         List<String> crunchifyList1 = new ArrayList<>(Arrays.asList("apple", "kiwi", phrase));
 
-        crunchifyList1.add("melon");
+        crunchifyList1.add("Melon");
         System.out.println(crunchifyList1);
         System.out.println(crunchifyList1.size());
 
         for (int i = 0; i < crunchifyList1.size(); i++) {
             String element = crunchifyList1.get(i);
             System.out.println(i + " iteration");
-            if (element.contains("melon")) {
+
+            if (element.contains("Me")) {
                 System.out.println(phrase);
+                continue;
             }
+            if (element.equals("orange")){
+                System.out.println("Orange");
+            }
+            if (element.contains("i")){
+                System.out.println("IIIIIII");
+            } else {
+                System.out.println("Bad loop");
+            }
+        }
+    }
+
+
+    @Test
+    public void openAllLinksInHeader(){
+
+        String actualTitle;
+        String actualUrlPrettyWoman;
+
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+        System.out.println(links.size());
+        for (int i = 0; i < links.size(); i++) {
+            String info = links.get(i).getText();
+            System.out.println(info);
+            links.get(i).click();
+            if (info.contains("WORK")){
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                Assert.assertEquals(Data.expectedTitleWork, actualTitle);
+            }
+
+            if (info.contains("PRETTY WOMAN")){
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                actualUrlPrettyWoman = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedTitlePrettyWoman, actualTitle);
+                Assert.assertEquals(actualUrlPrettyWoman, Data.expectedlUrlPrettyWoman);
+                driver.findElement(Locators.IMAGES).isDisplayed();
+            }
+
+            driver.get(Data.MAIN_URL);
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         }
     }
 
