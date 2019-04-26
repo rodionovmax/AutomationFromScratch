@@ -12,7 +12,7 @@ public class Search extends BaseUI{
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_SEARCH));
         driver.findElement(Locators.TAB_SEARCH).click();
         currentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrl, Data.EXPECTED_URL_SEARCH);
+        Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
 
         prettyWoman.getDropDownListByValue(Locators.FILTER_MIN_AGE, "20");
         prettyWoman.getDropDownListByValue(Locators.FILTER_MAX_AGE, "27");

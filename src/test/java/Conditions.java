@@ -142,8 +142,13 @@ public class Conditions extends BaseUI{
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
                 actualUrlPrettyWoman = driver.getCurrentUrl();
                 Assert.assertEquals(Data.expectedTitlePrettyWoman, actualTitle);
-                Assert.assertEquals(actualUrlPrettyWoman, Data.expectedlUrlPrettyWoman);
+                Assert.assertEquals(actualUrlPrettyWoman, Data.expectedUrlSearch);
                 driver.findElement(Locators.IMAGES).isDisplayed();
+                if(actualUrlPrettyWoman.contains("#")){
+                    Assert.fail("It contains restricted # ");
+                } else {
+                    System.out.println("No special characters. This URL is dope");
+                }
             }
 
             driver.get(Data.MAIN_URL);

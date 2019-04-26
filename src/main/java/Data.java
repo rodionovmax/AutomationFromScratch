@@ -1,9 +1,8 @@
 public class Data {
     // URLs
     public static final String MAIN_URL = "https://romanceabroad.com/";
-    public static final String EXPECTED_URL_SEARCH = "https://romanceabroad.com/users/search";
+    public static final String expectedUrlSearch = "https://romanceabroad.com/users/search";
     public static final String EXPECTED_URL_TOURS = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
-    public static final String expectedlUrlPrettyWoman = "https://romanceabroad.com/users/search";
 
     public static final String expectedTitleWork = "Ukrainian women for marriage";
     public static final String expectedTitlePrettyWoman = "Single Ukrainian women online";
