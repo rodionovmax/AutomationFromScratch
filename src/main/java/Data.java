@@ -6,6 +6,9 @@ public class Data {
 
     public static final String expectedTitleWork = "Ukrainian women for marriage";
     public static final String expectedTitlePrettyWoman = "Single Ukrainian women online";
+    public static final String expectedUrlGifts = "https://romanceabroad.com/store/category-sweets";
+
+
 
     public static final int INDEX_TOUR = 1;
     public static final int INDEX_ARTICLE = 0;

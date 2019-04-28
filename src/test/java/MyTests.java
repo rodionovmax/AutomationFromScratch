@@ -76,7 +76,7 @@ public class MyTests extends BaseUI{
     }
 
     @Test
-    public void openAllLinksInHeader(){
+    public void openAllLinksInHeaderLessonFour(){
         List<WebElement> links = driver.findElements(By.xpath("//ul[@class='navbar-nav']//li"));
         System.out.println(links.size());
         for (int i = 0; i < links.size(); i++) {
@@ -85,6 +85,42 @@ public class MyTests extends BaseUI{
             links.get(i).click();
             driver.get(Data.MAIN_URL);
             links = driver.findElements(By.xpath("//ul[@class='navbar-nav']//li"));
+        }
+    }
+
+
+    @Test
+    public void openAllLinksInHeader(){
+
+        String actualTitle;
+        String actualUrlPrettyWoman;
+
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+        System.out.println(links.size());
+        for (int i = 0; i < links.size(); i++) {
+            String info = links.get(i).getText();
+            System.out.println(info);
+            links.get(i).click();
+            if (info.contains("WORK")){
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                Assert.assertEquals(Data.expectedTitleWork, actualTitle);
+            }
+
+            if (info.contains("PRETTY WOMAN")){
+                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
+                actualUrlPrettyWoman = driver.getCurrentUrl();
+                Assert.assertEquals(Data.expectedTitlePrettyWoman, actualTitle);
+                Assert.assertEquals(actualUrlPrettyWoman, Data.expectedUrlSearch);
+                driver.findElement(Locators.IMAGES).isDisplayed();
+                if(actualUrlPrettyWoman.contains("#")){
+                    Assert.fail("It contains restricted # ");
+                } else {
+                    System.out.println("No special characters. This URL is dope");
+                }
+            }
+
+            driver.get(Data.MAIN_URL);
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         }
     }
 

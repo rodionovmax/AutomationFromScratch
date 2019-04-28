@@ -7,6 +7,7 @@ public class Gifts extends BaseActions{
     String pageTitleGifts;
     String resultTitle;
     String productTitleInDescription;
+    String giftActualTitle;
 
     public Gifts(WebDriver driver, WebDriverWait wait){
         super(driver, wait);
@@ -33,6 +34,12 @@ public class Gifts extends BaseActions{
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFTS_PRODUCT_TITLE));
         productTitleInDescription = driver.findElement(Locators.GIFTS_PRODUCT_TITLE).getText();
         return productTitleInDescription;
+    }
+
+    public String getGiftDescriptionTitle(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
+        giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
+        return giftActualTitle;
     }
 
 }

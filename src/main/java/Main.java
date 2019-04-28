@@ -29,6 +29,11 @@ public class Main extends BaseActions{
         driver.findElement(Locators.TAB_HOW_IT_WORKS).click();
     }
 
+    public void goToGifts(){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_GIFTS));
+        driver.findElement(Locators.TAB_GIFTS).click();
+    }
+
 
 
 }

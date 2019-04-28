@@ -3,12 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
-public class Conditions extends BaseUI{
+public class Conditions {
 
 
     // Condition for Int
@@ -120,41 +117,67 @@ public class Conditions extends BaseUI{
         }
     }
 
-
     @Test
-    public void openAllLinksInHeader(){
-
-        String actualTitle;
-        String actualUrlPrettyWoman;
-
-        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
-        System.out.println(links.size());
-        for (int i = 0; i < links.size(); i++) {
-            String info = links.get(i).getText();
-            System.out.println(info);
-            links.get(i).click();
-            if (info.contains("WORK")){
-                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
-                Assert.assertEquals(Data.expectedTitleWork, actualTitle);
-            }
-
-            if (info.contains("PRETTY WOMAN")){
-                actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
-                actualUrlPrettyWoman = driver.getCurrentUrl();
-                Assert.assertEquals(Data.expectedTitlePrettyWoman, actualTitle);
-                Assert.assertEquals(actualUrlPrettyWoman, Data.expectedUrlSearch);
-                driver.findElement(Locators.IMAGES).isDisplayed();
-                if(actualUrlPrettyWoman.contains("#")){
-                    Assert.fail("It contains restricted # ");
-                } else {
-                    System.out.println("No special characters. This URL is dope");
-                }
-            }
-
-            driver.get(Data.MAIN_URL);
-            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+    public void intArrayList(){
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
+        numbers.add(7);
+        numbers.add(129534);
+        System.out.println("Look, here is a list: " + numbers);
+        for (int i = 0; i < numbers.size(); i++) {
+            int num = numbers.get(i);
+            System.out.println("I'm printing number: " + num);
         }
     }
+
+
+    @Test
+    public void newKingOfWesterosBettingGame(){
+
+        String randomFamily;
+
+        List<String> gameOfThronesFamilies = new ArrayList<>(Arrays.asList("Lannister", "Stark", "Targaryen"));
+        // Add 2 families to the list
+        Collections.addAll(gameOfThronesFamilies, "Baratheon", "Tyrell");
+        System.out.println("Here is our finalists: " + gameOfThronesFamilies);
+
+        for (int i = 0; i < gameOfThronesFamilies.size(); i++) {
+
+            // Get random item from the list
+            randomFamily = gameOfThronesFamilies.get(new Random().nextInt(gameOfThronesFamilies.size()));
+            System.out.println(randomFamily);
+
+            // condition
+            if (randomFamily == "Lannister"){
+                System.out.println("Cersei is a new queen of Westeros");
+                continue;
+            }
+            if (randomFamily == "Stark"){
+                System.out.println("Sansa is a new queen of Westeros");
+                continue;
+            }
+            if (randomFamily == "Targaryen"){
+                System.out.println("Daenerys is a new queen of Westeros");
+                continue;
+            }
+            if (randomFamily == "Baratheon"){
+                System.out.println("Oooops nobody is alive... No king");
+                continue;
+            }
+            if (randomFamily == "Tyrell"){
+                System.out.println("Everyone is dead -> Night King is a new king of Westeros");
+                continue;
+            }
+            else {
+                Assert.fail("Ooops code 404 something was wrong");
+            }
+        }
+
+    }
+
+
+
+
+
 
 
 }
