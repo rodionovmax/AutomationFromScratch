@@ -7,6 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -189,6 +192,33 @@ public class BaseActions {
 //        System.out.println(currentURL);
 //        logJavaScriptConsoleError();
 //    }
+
+    public void uploadFileRobot(){
+        Robot robot = null;
+        try {
+            robot = new Robot();
+        } catch (AWTException e){
+            e.printStackTrace();
+        }
+
+        StringSelection sel = new StringSelection("C:\\Users....");
+        javaWaitSec(5);
+
+        //Copy to clipboard
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel, null);
+
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+
+        //Release CTRL+V
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyRelease(KeyEvent.VK_V);
+
+        //Press Enter
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.delay(1000);
+    }
 
 
 
