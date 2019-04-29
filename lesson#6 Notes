@@ -208,3 +208,23 @@ Types of Ajax method and other different stuff
                     <reportsDirectory>./test-output/${timestamp}</reportsDirectory>
                 </configuration>
             </plugin>
+
+
+11.
+
+<suite name = "TestSuite" parallel="none">
+    <test name="ChromeTestCases">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Search"/>
+            <class name="Tours"/>
+        </classes>
+    </test>
+    <test name="FirefoxTestCases">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Search"/>
+            <class name="Tours"/>
+        </classes>
+    </test>
+</suite>
