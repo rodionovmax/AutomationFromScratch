@@ -94,13 +94,18 @@ public class MyTests extends BaseUI{
 
         String actualTitle;
         String actualUrlPrettyWoman;
+        String info;
 
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         for (int i = 0; i < links.size(); i++) {
-            String info = links.get(i).getText();
+            info = links.get(i).getText();
             System.out.println(info);
-            links.get(i).click();
+//            links.get(i).click();
+
+            // Here we replaced regular click on Ajax click
+            main.ajaxClick(links.get(i));
+
             if (info.contains("WORK")){
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
                 Assert.assertEquals(Data.expectedTitleWork, actualTitle);
@@ -123,6 +128,37 @@ public class MyTests extends BaseUI{
             links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         }
     }
+
+
+    @Test
+    public void Test8(){
+
+        WebElement placePhoneNumber = driver.findElement(By.xpath("//i[@class='fa fa-phone fa-2x mb-3 sr-contact']//a[text()='+1(888)599-7816']"));
+//        By linkSignIn = By.xpath("//div[@class='col-lg-12 text-center']//a[@href='#']");
+
+        // Ajax click
+//        main.ajaxClick(Locators.TAB_OF_MAIN_PAGE, 3);
+
+        // Perform click. Works very well for Internet Explorer
+//        main.performClick(Locators.TAB_OF_MAIN_PAGE, 4);
+
+        // Scroll to the page bottom
+//        main.scrollToBottomOfPage();
+
+        // Ajax scroll
+//        main.ajaxScroll(placePhoneNumber);
+//        String phoneNumber = placePhoneNumber.getText();
+//        System.out.println("!!!!" + phoneNumber);
+//        Assert.assertEquals(phoneNumber, "+1(888)599-7816");
+
+        main.scrollToBottomOfPage();
+
+        // Scroll up
+        main.ajaxScrollUp();
+        main.javaWait(5);
+    }
+
+
 
 
 

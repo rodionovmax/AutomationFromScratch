@@ -8,7 +8,7 @@ import java.util.List;
 public class LessonFiveTests extends BaseUI {
 
     @Test
-    public void verifyGifts(){
+    public void verifyGiftsTest(){
 
         String actualUrlGifts;
         String giftCardAllText;
