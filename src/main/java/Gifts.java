@@ -42,4 +42,19 @@ public class Gifts extends BaseActions{
         return giftActualTitle;
     }
 
+    public String getFirstTitle(int index){
+        String title = driver.findElements(Locators.GIFT_TITLE).get(index).getText();
+        return title;
+    }
+
+    public void clickQuickViewButton(int index){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
+        driver.findElements(Locators.GIFT_QIUCK_VIEW).get(index).click();
+    }
+
+    public void clickCloseGiftButton(){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
+        driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+    }
+
 }

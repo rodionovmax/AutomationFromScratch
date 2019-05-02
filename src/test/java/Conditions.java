@@ -14,15 +14,15 @@ public class Conditions {
     @Test
     public void conditionForInt() {
         Random rand = new Random();
-        int dice = rand.nextInt(3);
+        dice = rand.nextInt(3);
 
         if (dice == 0) {
             System.out.println("You won a Ferrari!");
-        } else if (dice == 1) {
+        } if (dice == 1) {
             System.out.println("You won a penthouse in New York!");
-        } else if (dice == 2) {
+        } if (dice == 2) {
             System.out.println("You won a million dollars!");
-        } else if (dice == 3) {
+        } if (dice == 3) {
             System.out.println("Sorry, you are loser");
         }
     }

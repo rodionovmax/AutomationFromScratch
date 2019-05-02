@@ -29,12 +29,14 @@ public class LessonFourTests extends BaseUI {
      * java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
      */
     @Test
-    public void swipePictures() {
+    public void swipePictures() throws InterruptedException {
         main.goToPhotos();
+        Thread.sleep(3000);
         List<WebElement> pictures = driver.findElements(Locators.PICTURE);
         for (int i = 0; i < 4; i++) {
+            Thread.sleep(3000);
             pictures.get(i).click();
-            driver.findElement(Locators.CLOSE_PICTURE);
+            main.ajaxClick(Locators.CLOSE_PICTURE, i);
         }
     }
 

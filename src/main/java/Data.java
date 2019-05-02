@@ -22,6 +22,13 @@ public class Data {
     public static final String BLOG_EXPECTED_ARTICLE = "Kharkov Dating & Marriage Agency";
     public static final String HOW_IT_WORKS_URL = "https://romanceabroad.com/content/view/how-it-works";
 
+    public static final String expectedTitleSpa = "Spa";
+    public static final String expectedTitleChocolateAndFruits = "Chocolate and fruits";
+    public static final String expectedTitleTeddyBear = "Teddy bear";
+    public static final String expectedTitleFlowerBasket = "Flower basket";
+    public static final String expectedTitleSushiSets = "Sushi sets";
+    public static final String expectedTitleUkraineTours = "TOURS TO UKRAINE";
+
 
 
 

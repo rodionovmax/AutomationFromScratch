@@ -7,12 +7,12 @@ import java.util.List;
 
 public class LessonFiveTests extends BaseUI {
 
+    String actualUrlGifts;
+    String giftTitle;
+    String giftActualTitle;
+
     @Test
     public void verifyGiftsTest(){
-
-        String actualUrlGifts;
-        String giftCardAllText;
-        String giftTitle;
 
         main.goToGifts();
         actualUrlGifts = driver.getCurrentUrl();
@@ -20,74 +20,40 @@ public class LessonFiveTests extends BaseUI {
 
         List<WebElement> giftPictures = driver.findElements(Locators.GIFT_PICTURES);
         for (int i = 0; i < giftPictures.size(); i++) {
-            giftCardAllText = giftPictures.get(i).getText();
-            System.out.println(giftCardAllText);
-            giftTitle = driver.findElements(Locators.GIFT_TITLE).get(i).getText();
-            if(giftTitle.contains("Spa")){
+
+            giftTitle = gifts.getFirstTitle(i);
+            gifts.clickQuickViewButton(i);
+            giftActualTitle = gifts.getGiftDescriptionTitle();
+            gifts.clickCloseGiftButton();
+
+            if(giftTitle.contains(Data.expectedTitleSpa)){
                 System.out.println("We found Spa gift");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
-                driver.findElements(Locators.GIFT_QIUCK_VIEW).get(i).click();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
-                String giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
-                Assert.assertEquals(giftActualTitle, "Spa");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
-                driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+                Assert.assertEquals(giftActualTitle, Data.expectedTitleSpa);
                 continue;
             }
-            if(giftTitle.contains("Chocolate and fruits")){
+            if(giftTitle.contains(Data.expectedTitleChocolateAndFruits)){
                 System.out.println("We found Chocolate and fruits");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
-                driver.findElements(Locators.GIFT_QIUCK_VIEW).get(i).click();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
-                String giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
-                Assert.assertEquals(giftActualTitle, "Chocolate and fruits");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
-                driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+                Assert.assertEquals(giftActualTitle, Data.expectedTitleChocolateAndFruits);
                 continue;
             }
-            if(giftTitle.contains("Teddy bear")){
+            if(giftTitle.contains(Data.expectedTitleTeddyBear)){
                 System.out.println("We found Teddy bear");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
-                driver.findElements(Locators.GIFT_QIUCK_VIEW).get(i).click();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
-                String giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
-                Assert.assertEquals(giftActualTitle, "Teddy bear");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
-                driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+                Assert.assertEquals(giftActualTitle, Data.expectedTitleTeddyBear);
                 continue;
             }
-            if(giftTitle.contains("Flower basket")){
+            if(giftTitle.contains(Data.expectedTitleFlowerBasket)){
                 System.out.println("We found Flower basket");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
-                driver.findElements(Locators.GIFT_QIUCK_VIEW).get(i).click();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
-                String giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
-                Assert.assertEquals(giftActualTitle, "Flower basket");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
-                driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+                Assert.assertEquals(giftActualTitle, Data.expectedTitleFlowerBasket);
                 continue;
             }
-            if(giftTitle.contains("Sushi sets")){
+            if(giftTitle.contains(Data.expectedTitleSushiSets)){
                 System.out.println("We found Sushi sets");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
-                driver.findElements(Locators.GIFT_QIUCK_VIEW).get(i).click();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
-                String giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
-                Assert.assertEquals(giftActualTitle, "Sushi sets");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
-                driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+                Assert.assertEquals(giftActualTitle, Data.expectedTitleSushiSets);
                 continue;
             }
-            if(giftTitle.contains("TOURS TO UKRAINE")){
+            if(giftTitle.contains(Data.expectedTitleUkraineTours)){
                 System.out.println("We found TOURS TO UKRAINE");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_QIUCK_VIEW));
-                driver.findElements(Locators.GIFT_QIUCK_VIEW).get(i).click();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.GIFT_DESCRIPTION_TITLE));
-                String giftActualTitle = driver.findElement(Locators.GIFT_DESCRIPTION_TITLE).getText();
-                Assert.assertEquals(giftActualTitle, "TOURS TO UKRAINE");
-                wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
-                driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
-                continue;
+                Assert.assertEquals(giftActualTitle, Data.expectedTitleUkraineTours);
             }
             else {
                 Assert.fail("We didn't find any of expected gifts");
