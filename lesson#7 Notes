@@ -1,0 +1,17 @@
+1. Add priority to the test
+    @Test(priority = 1)
+    @Test(priority = 2)
+
+2. Parameter enabled
+    If boolean parameter is true test case will be run
+    public static final boolean testCase1234 = true;
+    @Test(priority = 1, enabled = testCase1234)
+
+    if boolean parameter is false test case will NOT be run
+    public static final boolean testCase56789 = false;
+    @Test(priority = 2, enabled = testCase56789)
+
+3. groups. Use it to
+    In TestNG.xml add <groups>
+    @Test(priority = 1, enabled = testCase1234, groups = {"admin"})
+

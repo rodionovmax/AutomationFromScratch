@@ -28,21 +28,7 @@ public class BaseUI {
     Photos photos;
     HowItWorks howItWorks;
 
-//    @BeforeMethod
-//    public void setUp(){
-//        driver = new ChromeDriver();
-//        wait = new WebDriverWait(driver, 5);
-//        main = new Main(driver, wait);
-//        registrationForm = new RegistrationForm(driver, wait);
-//        prettyWoman = new PrettyWoman(driver, wait);
-//        gifts = new Gifts(driver, wait);
-//        blog = new Blog(driver, wait);
-//        photos = new Photos(driver, wait);
-//        howItWorks = new HowItWorks(driver, wait);
-//        System.setProperty("webdriver.chrome.driver", "chromedriver");
-//        driver.manage().window().maximize();
-//        driver.get(Data.MAIN_URL);
-//    }
+
 
     @BeforeMethod
     @Parameters("browser")

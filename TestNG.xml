@@ -2,6 +2,15 @@
 
 <suite name = "TestSuite" parallel="none">
 
+
+    <groups>
+        <run>
+            <include name="admin"></include>
+            <exclude name="user"></exclude>
+            <exclude name="ie"></exclude>
+        </run>
+    </groups>
+
     <test name="ChromeTestCases">
 
         <parameter name="browser" value="chrome"/>
