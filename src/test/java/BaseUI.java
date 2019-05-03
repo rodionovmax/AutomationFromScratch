@@ -30,7 +30,7 @@ public class BaseUI {
 
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"admin", "user"})
     @Parameters("browser")
     public void setup(@Optional("chrome") String browser,Method method)
 
@@ -75,7 +75,7 @@ public class BaseUI {
     }
 
 
-    @AfterMethod
+    @AfterMethod(groups = {"admin", "user"})
     public void tearDown() {
 //        driver.quit();
         System.out.println("Close browser");

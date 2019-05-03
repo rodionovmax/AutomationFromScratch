@@ -12,6 +12,24 @@
     @Test(priority = 2, enabled = testCase56789)
 
 3. groups. Use it to
-    In TestNG.xml add <groups>
+    In TestNG.xml add <groups> inside test for browser
     @Test(priority = 1, enabled = testCase1234, groups = {"admin"})
+    In BaseUi add in @Before(groups = {"admin", "user", "ie"})
+
+    <-- Needs to be debugged -->
+
+4. DataProviders
+Here is a format:
+@DataProvider(name = "Countries")
+public static Object[][] checkAllCountries(){
+    return new object[][]{
+
+        {Countries.UK},
+        {Countries.CANADA},
+        {Countries.INDIA},
+        {Countries.MEXICO},
+        {Countries.US}
+    };
+}
+
 
