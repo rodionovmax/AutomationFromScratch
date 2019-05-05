@@ -5,4 +5,25 @@ try catch was added. Added explicit wait. Fixed locator for icon that closes pic
 
 3. Test for registration using DataProvider. Test class registration is created. It's using methods from RegistrationForm main class
 
-method generateNewNumber() in BaseActions
+a. method generateNewNumber() in BaseActions
+b. separate methods to click day, month and year of birth
+c. method to select city from the dropdown
+d. use inheritance in objects of Data Providers, like Data.email, Data.password etc.
+
+4. Test for registration using Data Provider with csv file for Data Driven Testing
+
+a. @DataProvider(name = "Registration2") // This method using lyabda
+b. Created Registration.csv file in the project where copied data w/o "" that will be used in test
+c. Created DataProviders class in java main to move DataProviders there. To access these methods in Tests add parameter
+dataProviderClass = DataProviders.class
+
+5. Testing passwords
+
+a. use dataProvider = "passwords" from DataProviders in main directory
+b. generateRandomString() in BaseActions generates random String for logins and passwords
+
+6. Test case using random choice for dropdown lists
+
+a. selectItemDropDownRandomOption() - Method in BaseActions for random choice from dropdown list
+b. testTabSearchWithRandomChoice() - test in Search test class
+c. added filterIsPresent condition because test failed because there was no check that button doesn't display if there are no results

@@ -12,8 +12,8 @@ public class RegistrationForm extends BaseActions{
     }
 
     public void getStarted(){
-        driver.findElement(Locators.EMAIL_JOIN).sendKeys(Data.EMAIL);
-        driver.findElement(Locators.PASSWORD_JOIN).sendKeys(Data.PASSWORD);
+        driver.findElement(Locators.EMAIL_JOIN).sendKeys(Data.email1);
+        driver.findElement(Locators.PASSWORD_JOIN).sendKeys(Data.password);
         driver.findElement(Locators.NEXT_BUTTON).click();
     }
 
@@ -36,6 +36,7 @@ public class RegistrationForm extends BaseActions{
     }
 
 
+    // Option 2 for using with DataProvider
     public void getStartedWithDataProvider(String email, String password){
         driver.findElement(Locators.EMAIL_JOIN).sendKeys(email);
         driver.findElement(Locators.PASSWORD_JOIN).sendKeys(password);
@@ -49,13 +50,8 @@ public class RegistrationForm extends BaseActions{
         clickMonthOfBirth(monthOfBirth);
         clickYearOfBirth(yearOfBirth);
         driver.findElement(Locators.PHONE_NUMBER).sendKeys(phoneNumber);
-        clearAndSendKeysLocationForm(city);
         driver.findElement(Locators.CONFIRMATION_CHECKBOX).click();
-
-
-        wait.until(ExpectedConditions.elementToBeClickable(Locators.LIST_OF_LOCATIONS));
-        driver.findElement(Locators.VALUE_OF_LOCATION_LIST).click();
-//        driver.findElement(Locators.PROFILE_NEXT_BUTTON).click(); It's not working
+        selectSpecificLocation(city);
     }
 
     public void clickDayOfBirth(String day){
@@ -91,8 +87,16 @@ public class RegistrationForm extends BaseActions{
         }
     }
 
-    public void clearAndSendKeysLocationForm(String city){
+    public void selectSpecificLocation(String city){
         driver.findElement(Locators.LOCATION).clear();
         driver.findElement(Locators.LOCATION).sendKeys(city);
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.LIST_OF_LOCATIONS));
+        List<WebElement> locations = driver.findElements(Locators.VALUE_OF_LOCATION_LIST);
+        for (int i = 0; i < locations.size(); i++) {
+             WebElement location = locations.get(i);
+             if(location.getText().contains(city)){
+                 location.click();
+             }
+        }
     }
 }

@@ -12,11 +12,14 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class BaseActions {
     protected WebDriver driver;
@@ -223,6 +226,23 @@ public class BaseActions {
 
     public static String generateNewNumber(String name, int length){
         return name + RandomStringUtils.random(length, "172984757");
+    }
+
+    public static String generateRandomString(){
+        return new BigInteger(120, new SecureRandom()).toString(32);
+    }
+
+    //Method for random choice from dropdown list
+    public void selectItemDropDownRandomOption(By locator, String dropDownName){
+        try {
+            WebElement element = driver.findElement(locator);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            Select select = new Select(driver.findElement(locator));
+            select.selectByIndex((int) (Math.random() * (select.getOptions().size() - 1)) + 1);
+            System.out.println(dropDownName + ": " + select.getFirstSelectedOption().getText());
+        } catch (NoSuchElementException e){
+
+        }
     }
 
 

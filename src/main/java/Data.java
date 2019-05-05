@@ -14,8 +14,10 @@ public class Data {
     public static final int INDEX_ARTICLE = 0;
     public static final String BLOG_EXPECTED_HEADER = "Blog";
     public static final int LIST_DAY_INDEX = 14;
-    public static final String EMAIL = "test@test.com";
-    public static final String PASSWORD = "p@ssw0rd";
+    public static final String email1 = "streetracer@gmail.com";
+    public static final String email2 = "harrypotter@hotmail.com";
+    public static final String email3 = "fbi.agent@fbi.kz";
+    public static final String password = "p@ssw0rd";
     public static final String REGISTRATION_NICKNAME = "Rupert";
     public static final String REGISTRATION_PHONE_NUMBER = "(617)123-4567";
     public static final String REGISTRATION_LOCATION_CITY = "Chicago";

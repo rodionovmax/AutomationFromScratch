@@ -1,3 +1,4 @@
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -10,17 +11,12 @@ public class Search extends BaseUI{
     public static final boolean testCase1234 = true;
     public static final boolean testCase56789 = false;
 
-    @DataProvider(name = "ValueOfDropDownList")
-    public static Object[][] checkAllCountries(){
-        return new Object[][]{
+    int minAge;
+    int maxAge;
 
-                {"20", "44", "views_count ", true},
-                {"33", "50", "date_created", false},
-                {"44", "55", "name", false},
-        };
-    }
 
-    @Test(dataProvider = "ValueOfDropDownList")
+
+    @Test(dataProvider = "ValueOfDropDownList", dataProviderClass = DataProviders.class)
     public void testTabSearch(String minAge,  String maxAge, String filterOfSearch, boolean requirement){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_SEARCH));
         driver.findElement(Locators.TAB_SEARCH).click();
@@ -44,6 +40,34 @@ public class Search extends BaseUI{
         driver.findElements(Locators.TAB_TOURS).get(Data.INDEX_TOUR).click();
         currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS);
+    }
+
+
+    @Test
+    public void testTabSearchWithRandomChoice() throws Exception {
+
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_SEARCH));
+        driver.findElement(Locators.TAB_SEARCH).click();
+        currentUrl = driver.getCurrentUrl();
+        Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
+        for (int i = 0; i < 15; i++) {
+            prettyWoman.selectItemDropDownRandomOption(Locators.FILTER_MIN_AGE, "Minimum age");
+            prettyWoman.selectItemDropDownRandomOption(Locators.FILTER_MAX_AGE, "Maximum age");
+
+//            minAge = Integer.parseInt(driver.findElements(Locators.FILTER_MIN_AGE).get(i).getText());
+//            System.out.println(minAge);
+
+            Boolean filterIsPresent = driver.findElements(Locators.DROPDOWN_SORT_BY).size() > 0;
+
+            if (filterIsPresent){
+                prettyWoman.selectItemDropDownRandomOption(Locators.DROPDOWN_SORT_BY, "Filter");
+                prettyWoman.clickSearchButton();
+            } else {
+                prettyWoman.clickSearchButton();
+            }
+            Thread.sleep(3000);
+        }
+
     }
 
 
