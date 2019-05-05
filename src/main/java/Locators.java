@@ -15,16 +15,20 @@ public class Locators {
     public static final By PASSWORD_JOIN = By.cssSelector("input#password");
     public static final By NEXT_BUTTON = By.xpath("//button[@type='button'][contains(text(),'Next')]");
     public static final By NICKNAME = By.cssSelector("#nickname");
+
     public static final By LIST_DAYS = By.cssSelector("#daySelect");
-    public static final By DAY_OF_BIRTH = By.xpath("//li[@data-handler='selectDay']");
+    public static final By DAY_OF_BIRTH = By.xpath("//li[@data-handler='selectDay']//a");
+
     public static final By LIST_MONTH = By.cssSelector("#monthSelect");
-    public static final By MONTH_OF_BIRTH = By.xpath("//li/a[text()='May']");
+    public static final By MONTH_OF_BIRTH = By.xpath("//ul//li[@data-handler='selectMonth']//a");
+
     public static final By LIST_YEAR = By.cssSelector("#yearSelect");
-    public static final By YEAR_OF_BIRTH = By.xpath("//li/a[text()='1939']");
+    public static final By YEAR_OF_BIRTH = By.xpath("//li[@data-handler='selectYear']//a");
+
     public static final By PHONE_NUMBER = By.cssSelector("[name='data[phone]']");
     public static final By LOCATION = By.cssSelector("input[name='region_name']");
-    public static final By LOCATION_FROM_DROPDOWN1 = By.xpath("//div[@class='dropdown dropdown_location']/ul/li[text()='Boston, Massachusetts, United States']");
-    public static final By LOCATION_FROM_DROPDOWN = By.xpath("//div[@class='dropdown dropdown_location']/ul/li[text()='Chicago, Illinois, United States']");
+    public static final By LIST_OF_LOCATIONS = By.xpath("//div[@class='dropdown dropdown_location']");
+    public static final By VALUE_OF_LOCATION_LIST = By.xpath("//div[@class='dropdown dropdown_location']//ul//li");
     public static final By CONFIRMATION_CHECKBOX = By.cssSelector("#confirmation");
     public static final By PROFILE_NEXT_BUTTON = By.cssSelector("button[data-action='update-profile']");
     // locators for testSearchGiftsAndVerifyOutput()
@@ -43,7 +47,7 @@ public class Locators {
     public static final By PHOTO_TILES = By.cssSelector("#gallery");
     public static final By TAB_PHOTOS = By.xpath("//a[@href='https://romanceabroad.com/media/index']");
     public static final By PICTURE = By.xpath("//div[@class='g-users-gallery__photo']//a");
-    public static final By CLOSE_PICTURE = By.xpath("//i[@class='fa fa-times']");
+    public static final By CLOSE_PICTURE = By.xpath("//div[@class='media-gallery-popup__close']//i[@class='fa fa-times']");
     public static final By TAB_HOW_IT_WORKS = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
     public static final By HOW_IT_WORKS_SIDE_MENU = By.cssSelector(".inside.account_menu");
     public static final By TITLE_OF_PAGE = By.xpath("//h1");

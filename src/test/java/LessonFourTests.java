@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,25 +19,22 @@ public class LessonFourTests extends BaseUI {
         }
     }
 
-    /**
-     * This test fails due to some driver error below
-     * Starting ChromeDriver 73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72) on port 25604
-     * Only local connections are allowed.
-     * Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-     * Apr 23, 2019 10:07:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-     * INFO: Detected dialect: OSS
-     *
-     * java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-     */
+
     @Test
-    public void swipePictures() throws InterruptedException {
+    public void swipePictures(){
         main.goToPhotos();
-        Thread.sleep(3000);
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.PICTURE));
         List<WebElement> pictures = driver.findElements(Locators.PICTURE);
-        for (int i = 0; i < 4; i++) {
-            Thread.sleep(3000);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("!!!!! " + i);
             pictures.get(i).click();
-            main.ajaxClick(Locators.CLOSE_PICTURE, i);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
+            driver.findElement(Locators.CLOSE_PICTURE).click();
+            pictures = driver.findElements(Locators.PICTURE);
         }
     }
 

@@ -1,3 +1,4 @@
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -218,6 +219,10 @@ public class BaseActions {
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
         robot.delay(1000);
+    }
+
+    public static String generateNewNumber(String name, int length){
+        return name + RandomStringUtils.random(length, "172984757");
     }
 
 

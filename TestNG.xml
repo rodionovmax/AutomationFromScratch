@@ -10,13 +10,13 @@
         <groups>
             <run>
                 <include name="admin"></include>
-                <exclude name="user"></exclude>
-                <exclude name="ie"></exclude>
+                <!--<exclude name="user"></exclude>-->
+                <!--<exclude name="ie"></exclude>-->
             </run>
         </groups>
 
         <classes>
-            <class name="Search"/>
+            <!--<class name="Search"/>-->
             <class name="Tours"/>
 
         </classes>
@@ -28,7 +28,7 @@
         <parameter name="browser" value="firefox"/>
 
         <classes>
-            <class name="Search"/>
+            <!--<class name="Search"/>-->
             <class name="Tours"/>
 
         </classes>
