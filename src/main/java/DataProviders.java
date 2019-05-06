@@ -55,4 +55,23 @@ public class DataProviders {
                 {"king_of_apes@gmail.com", "b@n@n@", true},
         };
     }
+
+
+    // Data Provider for searchGiftsTest
+    @DataProvider(name = "gifts")
+    public static Object[][] testGifts(){
+        return new Object[][]{
+                {Data.searchGift1,true},
+                {Data.searchGift2,false},
+                {Data.searchGift3,true},
+                {Data.searchGift4,false},
+                {Data.searchGift5,true},
+                {Data.searchGift6,false},
+                {Data.searchGift7,true},
+                {Data.searchGift8,false},
+                {Data.searchGift9,true},
+                {Data.searchGift10,true},
+                {Data.searchGift11,false},
+        };
+    }
 }

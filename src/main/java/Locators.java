@@ -34,7 +34,7 @@ public class Locators {
     // locators for testSearchGiftsAndVerifyOutput()
     public static final By TAB_BLOG = By.xpath("//a[@href='https://romanceabroad.com/content/view/blog']");
     public static final By GIFTS_TITLE_PAGE = By.cssSelector(".title");
-    public static final By GIFTS_SEARCH = By.cssSelector("#search_product");
+    public static final By GIFTS_SEARCH_FIELD = By.cssSelector("#search_product");
     public static final By GIFTS_SEARCH_BUTTON = By.cssSelector("button#search_friend");
     public static final By GIFTS_SEARCH_RESULT_TITLE = By.cssSelector(".title-block.pt5");
     public static final By GIFTS_QUICK_VIEW_BUTTON = By.xpath("//input[@value='Quick view']");
@@ -60,6 +60,7 @@ public class Locators {
 //    public static final By GIFT_CLOSE_QIUCK_VIEW = By.xpath("//div[@class='load_content_close clearfix']/i");
     public static final By GIFT_CLOSE_QIUCK_VIEW = By.xpath("//div[@class='load_content_close clearfix'][@style='display: block;']/i");
     public static final By GIFT_DESCRIPTION_TITLE = By.xpath("//h4");
+    public static final By GIFT_STORE_RESULTS = By.cssSelector(".col-xs-12.b-store-list");
 
 
 

@@ -31,7 +31,17 @@ public class Data {
     public static final String expectedTitleSushiSets = "Sushi sets";
     public static final String expectedTitleUkraineTours = "TOURS TO UKRAINE";
 
-
+    public static final String searchGift1 = "Spa";
+    public static final String searchGift2 = "Massage";
+    public static final String searchGift3 = "Chocolate";
+    public static final String searchGift4 = "iPhone";
+    public static final String searchGift5 = "Ted";
+    public static final String searchGift6 = "beer";
+    public static final String searchGift7 = "Flower";
+    public static final String searchGift8 = "Roses";
+    public static final String searchGift9 = "Sushi se";
+    public static final String searchGift10 = "KRAINE";
+    public static final String searchGift11 = "qwerty";
 
 
 //    public static final String PHOTOS_EXPECTED_URL = "https://romanceabroad.com/media/index";

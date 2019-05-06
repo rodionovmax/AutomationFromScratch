@@ -23,7 +23,7 @@ public class Gifts extends BaseActions{
     }
 
     public String searchGiftAndVerifyResults(){
-        driver.findElement(Locators.GIFTS_SEARCH).sendKeys("chocolate");
+        driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys("chocolate");
         driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
         resultTitle = driver.findElement(Locators.GIFTS_SEARCH_RESULT_TITLE).getText();
         return resultTitle;
@@ -55,6 +55,15 @@ public class Gifts extends BaseActions{
     public void clickCloseGiftButton(){
         wait.until(ExpectedConditions.elementToBeClickable(Locators.GIFT_CLOSE_QIUCK_VIEW));
         driver.findElement(Locators.GIFT_CLOSE_QIUCK_VIEW).click();
+    }
+
+    public void searchGiftWithDataProvider(String gift, Boolean requirement){
+        driver.findElement(Locators.GIFTS_SEARCH_FIELD).clear();
+        driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys(gift);
+        driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
+        if (requirement){
+            
+        }
     }
 
 }
