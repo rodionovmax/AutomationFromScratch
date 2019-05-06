@@ -1,6 +1,10 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import sun.jvm.hotspot.utilities.Assert;
+
+import static org.testng.Assert.assertTrue;
 
 public class Gifts extends BaseActions{
 
@@ -61,9 +65,18 @@ public class Gifts extends BaseActions{
         driver.findElement(Locators.GIFTS_SEARCH_FIELD).clear();
         driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys(gift);
         driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
+        WebElement results = driver.findElement(Locators.GIFT_STORE_RESULTS);
         if (requirement){
-            
+            assertTrue(results.isDisplayed());
+        } else {
+            System.out.println("There is no results for this search");
         }
+    }
+
+    public void searchGiftWithDataProviderAndCsvFile(String gift){
+        driver.findElement(Locators.GIFTS_SEARCH_FIELD).clear();
+        driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys(gift);
+        driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
     }
 
 }

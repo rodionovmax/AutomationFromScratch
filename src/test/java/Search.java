@@ -54,9 +54,6 @@ public class Search extends BaseUI{
             prettyWoman.selectItemDropDownRandomOption(Locators.FILTER_MIN_AGE, "Minimum age");
             prettyWoman.selectItemDropDownRandomOption(Locators.FILTER_MAX_AGE, "Maximum age");
 
-//            minAge = Integer.parseInt(driver.findElements(Locators.FILTER_MIN_AGE).get(i).getText());
-//            System.out.println(minAge);
-
             Boolean filterIsPresent = driver.findElements(Locators.DROPDOWN_SORT_BY).size() > 0;
 
             if (filterIsPresent){

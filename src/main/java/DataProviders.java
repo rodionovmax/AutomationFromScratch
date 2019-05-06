@@ -74,4 +74,17 @@ public class DataProviders {
                 {Data.searchGift11,false},
         };
     }
+
+    @DataProvider(name = "gifts2")
+    public static Object[][] testGiftsWithCsv() throws Exception{
+        ArrayList<Object[]> out = new ArrayList<>();
+        Files.readAllLines(Paths.get("SearchGifts.csv")).stream().forEach(s-> {
+
+            String[] data = s.split(",");
+            out.add(new Object[]{data[0]});
+
+        });
+
+        return out.toArray(new Object[out.size()][]);
+    }
 }
