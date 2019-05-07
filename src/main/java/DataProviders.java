@@ -81,7 +81,7 @@ public class DataProviders {
         Files.readAllLines(Paths.get("SearchGifts.csv")).stream().forEach(s-> {
 
             String[] data = s.split(",");
-            out.add(new Object[]{data[0]});
+            out.add(new Object[]{data[0], data[1]});
 
         });
 

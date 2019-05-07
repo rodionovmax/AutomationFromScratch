@@ -62,18 +62,30 @@ public class Gifts extends BaseActions{
     }
 
     public void searchGiftWithDataProvider(String gift, Boolean requirement){
-        driver.findElement(Locators.GIFTS_SEARCH_FIELD).clear();
-        driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys(gift);
-        driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
-        WebElement results = driver.findElement(Locators.GIFT_STORE_RESULTS);
+
+        clearTypeClick(gift);
+
         if (requirement){
+            WebElement results = driver.findElement(Locators.GIFT_STORE_RESULTS);
             assertTrue(results.isDisplayed());
         } else {
             System.out.println("There is no results for this search");
         }
     }
 
-    public void searchGiftWithDataProviderAndCsvFile(String gift){
+    public void searchGiftWithDataProvider(String gift, String requirement){
+
+        clearTypeClick(gift);
+
+        if (requirement.contains("true")){
+            WebElement results = driver.findElement(Locators.GIFT_STORE_RESULTS);
+            assertTrue(results.isDisplayed());
+        } else {
+            System.out.println("There is no results for this search");
+        }
+    }
+
+    public void clearTypeClick(String gift){
         driver.findElement(Locators.GIFTS_SEARCH_FIELD).clear();
         driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys(gift);
         driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();

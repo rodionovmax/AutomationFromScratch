@@ -11,9 +11,9 @@ public class GiftsSearchTests extends BaseUI{
 
     /**  Test to search gifts using Data Provider and CSV file as a source*/
     @Test(dataProvider = "gifts2", dataProviderClass = DataProviders.class)
-    public void searchGiftsTestsWithCsvFile(String gift){
+    public void searchGiftsTestsWithCsvFile(String gift, String requirement){
         main.goToGifts();
-        gifts.searchGiftWithDataProviderAndCsvFile(gift);
+        gifts.searchGiftWithDataProvider(gift, requirement);
     }
 
 }
