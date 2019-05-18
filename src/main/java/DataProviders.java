@@ -87,4 +87,22 @@ public class DataProviders {
 
         return out.toArray(new Object[out.size()][]);
     }
+
+
+    @DataProvider(name = "gifts3")
+    public static Object[][] testGiftsInLoop(){
+        return new Object[][]{
+                {Data.searchGift1,true,1},
+                {Data.searchGift2,false,2},
+                {Data.searchGift3,true,3},
+                {Data.searchGift4,false,4},
+                {Data.searchGift5,true,5},
+                {Data.searchGift6,false,6},
+                {Data.searchGift7,true,7},
+                {Data.searchGift8,false,8},
+                {Data.searchGift9,true,9},
+                {Data.searchGift10,true,10},
+                {Data.searchGift11,false,11},
+        };
+    }
 }

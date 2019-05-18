@@ -57,7 +57,6 @@ public class Locators {
     public static final By GIFT_PICTURES = By.xpath("//div[@class='contrasting-block']");
     public static final By GIFT_TITLE = By.xpath("//div[@class='title-block pt5']");
     public static final By GIFT_QIUCK_VIEW = By.xpath("//div[@class='quick_view_wrapper']/input[@value='Quick view']");
-//    public static final By GIFT_CLOSE_QIUCK_VIEW = By.xpath("//div[@class='load_content_close clearfix']/i");
     public static final By GIFT_CLOSE_QIUCK_VIEW = By.xpath("//div[@class='load_content_close clearfix'][@style='display: block;']/i");
     public static final By GIFT_DESCRIPTION_TITLE = By.xpath("//h4");
     public static final By GIFT_STORE_RESULTS = By.cssSelector(".col-xs-12.b-store-list");

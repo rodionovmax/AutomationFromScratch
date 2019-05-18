@@ -46,11 +46,6 @@ public class BaseActions {
         select.selectByValue(value);
     }
 
-//    public static String generateEmail(String domain, int length){
-//        return RandomStringUtils.random(length, "abcdefghijklmnopqrstuvwxyz") + "@" + domain;
-//    }
-
-
     // Different varieties of Ajax click
     public void ajaxClick(WebElement element){
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
@@ -59,13 +54,11 @@ public class BaseActions {
     }
 
     public void ajaxClick(By by){
-//        wait.until(ExpectedConditions.presenceOfElementLocated(by));
         wait.until(ExpectedConditions.elementToBeClickable(by));
         ajaxClick(driver.findElement(by));
     }
 
     public void ajaxClick(By by, int index){
-//        wait.until(ExpectedConditions.presenceOfElementLocated(by));
         wait.until(ExpectedConditions.elementToBeClickable(by));
         ajaxClick(driver.findElements(by).get(index));
     }

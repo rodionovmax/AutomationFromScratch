@@ -91,4 +91,7 @@ public class Gifts extends BaseActions{
         driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
     }
 
+
+
+
 }

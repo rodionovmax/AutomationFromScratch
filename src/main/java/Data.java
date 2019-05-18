@@ -8,11 +8,8 @@ public class Data {
     public static final String expectedTitlePrettyWoman = "Single Ukrainian women online";
     public static final String expectedUrlGifts = "https://romanceabroad.com/store/category-sweets";
 
-
-
     public static final int INDEX_TOUR = 1;
     public static final int INDEX_ARTICLE = 0;
-    public static final String BLOG_EXPECTED_HEADER = "Blog";
     public static final int LIST_DAY_INDEX = 14;
     public static final String email1 = "streetracer@gmail.com";
     public static final String email2 = "harrypotter@hotmail.com";
@@ -43,8 +40,6 @@ public class Data {
     public static final String searchGift10 = "KRAINE";
     public static final String searchGift11 = "qwerty";
 
-
-//    public static final String PHOTOS_EXPECTED_URL = "https://romanceabroad.com/media/index";
     public static final String GIFTS_EXPECTED_URL = "https://romanceabroad.com/store/category-sweets";
 
 }

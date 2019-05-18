@@ -1,4 +1,4 @@
-1. Fixed test swipePictures() in LessonFourTests.
+1. Fixed test swipePictures() in PhotosTests.
 try catch was added. Added explicit wait. Fixed locator for icon that closes picture
 
 2. Example for @groups annotation and include tag in TestNG.xml

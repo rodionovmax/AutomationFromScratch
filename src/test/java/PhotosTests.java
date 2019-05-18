@@ -5,19 +5,8 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class LessonFourTests extends BaseUI {
+public class PhotosTests extends BaseUI {
 
-    // if/else for WebElement
-    @Test
-    public void conditionForWebElement() {
-        WebElement tabSearch = driver.findElement(Locators.TAB_SEARCH);
-
-        if (tabSearch.getText().contains("PRETTY WOMEN")) {
-            tabSearch.click();
-        } else {
-            Assert.fail("We can't find Pretty Woman tab");
-        }
-    }
 
 
     @Test
@@ -38,19 +27,7 @@ public class LessonFourTests extends BaseUI {
         }
     }
 
-    @Test
-    public void verifyHowItWorksSideMenu(){
-        main.goToHowItWorks();
-        howItWorks.verifySideMenuElements();
-        howItWorks.openEverySecondMenuElement();
 
-        if(howItWorks.linksNumber <= 22){
-            System.out.println("Test is correct");
-        } else {
-            Assert.fail("Actual number of links doesn't match with expected result");
-        }
-
-    }
 
 
 

@@ -5,7 +5,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Blog extends BaseActions {
 
     int articles;
-    String blogHeader;
     String articleTitle;
 
     public Blog(WebDriver driver, WebDriverWait wait){
@@ -13,7 +12,6 @@ public class Blog extends BaseActions {
     }
 
     public Integer verifyNumberOfArticles(){
-//        blogHeader = driver.findElement(Locators.BLOG_HEADER).getText();
         articles = driver.findElements(Locators.BLOG_ARTICLES).size();
         return articles;
     }

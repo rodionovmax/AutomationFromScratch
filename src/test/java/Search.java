@@ -54,17 +54,39 @@ public class Search extends BaseUI{
             prettyWoman.selectItemDropDownRandomOption(Locators.FILTER_MIN_AGE, "Minimum age");
             prettyWoman.selectItemDropDownRandomOption(Locators.FILTER_MAX_AGE, "Maximum age");
 
-            Boolean filterIsPresent = driver.findElements(Locators.DROPDOWN_SORT_BY).size() > 0;
-
-            if (filterIsPresent){
+            if (driver.findElements(Locators.DROPDOWN_SORT_BY).size() > 0) {
                 prettyWoman.selectItemDropDownRandomOption(Locators.DROPDOWN_SORT_BY, "Filter");
-                prettyWoman.clickSearchButton();
-            } else {
-                prettyWoman.clickSearchButton();
             }
+            prettyWoman.clickSearchButton();
             Thread.sleep(3000);
-        }
 
+        }
+    }
+
+    // if/else for WebElement
+    @Test
+    public void conditionForWebElement() {
+        WebElement tabSearch = driver.findElement(Locators.TAB_SEARCH);
+
+        if (tabSearch.getText().contains("PRETTY WOMEN")) {
+            tabSearch.click();
+        } else {
+            Assert.fail("We can't find Pretty Woman tab");
+        }
+    }
+
+
+    @Test
+    public void test6(){
+        main.clickJoinButton();
+        registrationForm.getStarted();
+
+        WebElement checkbox = driver.findElement(Locators.CONFIRMATION_CHECKBOX);
+
+        if(!checkbox.isSelected()){
+            checkbox.click();
+            System.out.println("Checkbox is selected!");
+        }
     }
 
 

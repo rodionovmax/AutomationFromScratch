@@ -1,16 +1,20 @@
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class DataProviderLessonSeven extends BaseUI {
+public class GiftsTests extends BaseUI {
 
     String actualUrlGifts;
     String giftTitle;
     String giftActualTitle;
+    int articles;
+    String articleTitle;
+    String pageTitleGifts;
+    String resultTitle;
+    String productTitleInDescription;
 
 
     @DataProvider(name = "Gifts")
@@ -22,6 +26,7 @@ public class DataProviderLessonSeven extends BaseUI {
                 {"Teddy bear"},
         };
     }
+
     @Test(dataProvider = "Gifts")
     public void verifyGiftsTest(String gift){
         System.out.println(gift);
@@ -74,4 +79,38 @@ public class DataProviderLessonSeven extends BaseUI {
         }
 
     }
+
+    @Test(dataProvider = "gifts", dataProviderClass = DataProviders.class)
+    public void searchGiftsTests(String gift, Boolean requirement){
+        main.goToGifts();
+        gifts.searchGiftWithDataProvider(gift, requirement);
+    }
+
+
+    /**  Test to search gifts using Data Provider and CSV file as a source*/
+    @Test(dataProvider = "gifts2", dataProviderClass = DataProviders.class)
+    public void searchGiftsTests(String gift, String requirement){
+        main.goToGifts();
+        gifts.searchGiftWithDataProvider(gift, requirement);
+    }
+
+
+    @Test(dataProvider = "gifts3", dataProviderClass = DataProviders.class)
+    public void searchGiftsTests(String gift, String requirement, int number){
+        main.goToGifts();
+        gifts.searchGiftWithDataProvider(gift, requirement);
+    }
+
+    /** Test that opens gifts page, searches a product, verifies result, opens product description
+     * and verifies title in description */
+    @Test
+    public void testSearchGiftsAndVerifyOutput(){
+        pageTitleGifts = gifts.openGiftsTabAndVerifyTitle();
+        Assert.assertEquals(pageTitleGifts, "Gifts", "Actual title doesn't match with Expected title: ");
+        resultTitle = gifts.searchGiftAndVerifyResults();
+        Assert.assertTrue(resultTitle.contains("Chocolate"));
+        productTitleInDescription = gifts.openGiftDetailsAndVerifyPageTitle();
+        Assert.assertTrue(productTitleInDescription.contains("Chocolate"));
+    }
+
 }

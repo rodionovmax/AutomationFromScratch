@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -25,22 +23,6 @@ public class Conditions {
         } if (dice == 3) {
             System.out.println("Sorry, you are loser");
         }
-    }
-
-    // Condition for String
-    @Test
-    public void conditionForString() {
-
-        ConditionsHelper conditionsHelper = new ConditionsHelper();
-
-        if (conditionsHelper.inputString == "money") {
-            System.out.println("You won $1000. Congratulations!");
-        } else if (conditionsHelper.inputString == "prise") {
-            System.out.println("You won a Ferrari!!!");
-        } else {
-            System.out.println("You made a typo, so you didn't win anything...");
-        }
-
     }
 
     //Condition for boolean

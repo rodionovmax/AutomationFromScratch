@@ -3,6 +3,14 @@ import org.testng.annotations.Test;
 public class Registration extends BaseUI{
 
 
+    /** Test for Join web-form */
+    @Test
+    public void testLoginViaJoinButton(){
+        main.clickJoinButton();
+        registrationForm.getStarted();
+        registrationForm.getStartedSecondPage();
+    }
+
 
     @Test(dataProvider = "Registration", dataProviderClass = DataProviders.class)
     public void testLoginViaJoinButtonUsingDataProvider(String email, String password, String nickname, String dayOfBirth,

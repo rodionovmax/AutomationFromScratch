@@ -56,7 +56,7 @@ public class RegistrationForm extends BaseActions{
 
     public void clickDayOfBirth(String day){
         driver.findElement(Locators.LIST_DAYS).click();
-        List<WebElement> days = driver.findElements(Locators.MONTH_OF_BIRTH);
+        List<WebElement> days = driver.findElements(Locators.DAY_OF_BIRTH);
         for (int i = 0; i < days.size() ; i++) {
             WebElement dayValue = days.get(i);
             if(dayValue.getText().contains(day)){
