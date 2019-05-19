@@ -1,0 +1,93 @@
+Packages
+
+1. Move all main classes to com.romanceabroad.ui
+
+2. API Alex's example
+
+    public class Api{
+
+    	@BeforeMethod
+    	public void setup(){
+    		Awailability.reset();
+    		Awailability.setDefaultPollDelay(100, MILLISECONDS);
+    		Awailability.setDefaultPollnterval(3, SECONDS);
+    		Awailability.setDefaultTimeout(7, SECONDS);
+    	}
+
+    	@Test
+    	public void getTradeStream(){
+    		await.untilAsserted(() -> given()
+    				.get(Data.baseTradeUrl + Data.uriTradeStream)
+    				.then()
+    				.statusCode(Data.positiveResponseCode)
+    				.assertThat().contentType(ContentType.JSON)
+    				.body(Data.apiParameterNonce, Matchers.notNullValue())
+    				.body(Data.apiParameterToken, Matchers.notNullValue());
+    	}
+
+    	@Test
+    	public void postSignIn(){
+    		Response response = given().
+    				queryParam(Data.apiParameterUsername, Data.username).
+    				queryParam(Data.apiParameterPassword, Data.password).
+    				when().
+    				post(Data.baseUrl + uriSignIn).
+    				then().
+    				contentType(ContentType.HTML).extract().response
+    		System.out.println(response.asString());
+    		response.then().statusCode(302).assertThat().contentType(Content..)
+    	}
+
+    }
+
+3. Another Test
+
+    @Test
+    public void testFees(){
+        mainPage.acceptCookies();
+        mainPage.clickFeesButton();
+        List<String> entries = feesPage.getEntriesFeesFromTable();
+        for(int i = 0; i < entries.size(); i++) {
+            System.out.println(entries.get(i));
+            if(entries.get(0).contans(Data.expectedFeesValue)){
+                System.out.println("First fee: " + Data.ExpectedFeesValue);
+            } else {
+            Assert.fail();
+            }
+        }
+    }
+
+4. Test for Login
+
+    @Test(dataProvider = "Login", dataProviderClass = DataProviders.class)
+    public void testMarkets(String username, String password, boolean requirment){
+    	String testBox = content.getCurrentXmlTest().getParameter(" ");
+    	if(testBox != null && testBox.contains("mobile")) {
+    		mainPage.clickMobileSignIn();
+    	} else {
+    		mainPage.clickWebSignIn();
+    	}
+    	loginProfile.fillInLoginForm(username, password);
+    	try {
+    		loginProfile.getCapthaCheckbox();
+    		return;
+    	} catch (Exception e) {
+
+    	}
+    	if (requirement) {
+    		actualUsername = loginProfile.getUsername();
+    		Assert.assertEquals(actualUsername, username);
+    	} else {
+    		loginProfile.getErrorMessage();
+    	}
+
+    }
+
+5. Mobile Emulator for Chrome
+
+
+
+
+
+
+

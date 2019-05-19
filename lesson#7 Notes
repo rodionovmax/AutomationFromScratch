@@ -18,7 +18,7 @@
 
     <-- Needs to be debugged -->
 
-4. DataProviders
+4. com.romanceabroad.ui.DataProviders
 Here is a format:
 @DataProvider(name = "Countries")
 public static Object[][] checkAllCountries(){

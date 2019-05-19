@@ -189,9 +189,9 @@ Types of Ajax method and other different stuff
             driver.get("chrome://settings/clearBrowserData");
         }
         wait = new WebDriverWait(driver, 20);
-        main = new Main(driver, wait);
+        main = new com.romanceabroad.ui.MainPage(driver, wait);
         driver.manage().window().maximize();
-        driver.get(Data.MAIN_URL);
+        driver.get(com.romanceabroad.ui.Data.MAIN_URL);
     }
 
 
@@ -216,15 +216,15 @@ Types of Ajax method and other different stuff
     <test name="ChromeTestCases">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="Search"/>
-            <class name="Tours"/>
+            <class name="com.romanceabroad.ui.Search"/>
+            <class name="com.romanceabroad.ui.Tours"/>
         </classes>
     </test>
     <test name="FirefoxTestCases">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="Search"/>
-            <class name="Tours"/>
+            <class name="com.romanceabroad.ui.Search"/>
+            <class name="com.romanceabroad.ui.Tours"/>
         </classes>
     </test>
 </suite>

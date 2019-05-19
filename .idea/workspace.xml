@@ -2,27 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22453a9f-b156-4b18-a3b1-a3d12d2fc61a" name="Default Changelist" comment="Lesson 5 completed">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BlogTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson#6 Notes" beforeDir="false" afterPath="$PROJECT_DIR$/lesson#6 Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson#7 Notes" beforeDir="false" afterPath="$PROJECT_DIR$/lesson#7 Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson#8 Notes" beforeDir="false" afterPath="$PROJECT_DIR$/lesson#8 Notes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConditionsHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gifts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegistrationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Conditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DataProviderLessonSeven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GiftsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GiftsSearchTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonFiveTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonFourTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhotosTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson#9 Notes" beforeDir="false" afterPath="$PROJECT_DIR$/lesson#9 Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/BaseActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/BlogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/DataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/GiftsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HowItWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/HowItWorks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/PhotosPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrettyWoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/PrettyWomanPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegistrationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/RegistrationFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/BaseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BlogTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/BlogTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Conditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Conditions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GiftsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/GiftsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HowItWorksTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/HowItWorksTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/MainPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Passwords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Passwords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PhotosTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/PhotosTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Tours.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BaseActions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Blog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConditionsHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DataProviders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gifts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HowItWorks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Locators.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Photos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PrettyWoman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegistrationForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Conditions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataProviderLessonSeven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GiftsSearchTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LessonFiveTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LessonFourTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Passwords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tours.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,10 +69,95 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Registration.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="338">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/BaseActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/BaseUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1751#1767#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson#11 Notes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestNG.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Tours.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/Locators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Search.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,101 +167,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PhotosTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BlogTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MainPageTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HowItWorksTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="34" selection-start-line="34" selection-end-line="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GiftsTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1225">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Search.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +213,6 @@
         <option value="$PROJECT_DIR$/lesson#6 Notes" />
         <option value="$PROJECT_DIR$/lesson#7 Notes" />
         <option value="$PROJECT_DIR$/src/test/java/Tours.java" />
-        <option value="$PROJECT_DIR$/TestNG.xml" />
         <option value="$PROJECT_DIR$/Registration.csv" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Passwords.java" />
@@ -210,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ConditionsHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/Locators.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
         <option value="$PROJECT_DIR$/src/test/java/Conditions.java" />
         <option value="$PROJECT_DIR$/src/test/java/DataProviderLessonSeven.java" />
         <option value="$PROJECT_DIR$/src/test/java/LessonFiveTests.java" />
@@ -224,6 +242,14 @@
         <option value="$PROJECT_DIR$/src/test/java/MainPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/BlogTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BlogPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BaseUI.java" />
+        <option value="$PROJECT_DIR$/lesson#11 Notes" />
+        <option value="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/BaseUI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Tours.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/Locators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/MainPage.java" />
+        <option value="$PROJECT_DIR$/TestNG.xml" />
       </list>
     </option>
   </component>
@@ -275,6 +301,14 @@
               <item name="com.romanceabroad" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.romanceabroad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -283,6 +317,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.romanceabroad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -295,6 +337,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557980079598" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -302,6 +345,10 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.romanceabroad.ui" />
+      <recent name="com.romanceabroad.com" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -318,7 +365,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Search.testTabSearchWithRandomChoice">
+  <component name="RunManager" selected="TestNG./Users/rodionovmax/Documents/sandbox/TestNG.xml">
     <configuration name="GiftsSearchTests.searchGiftsTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
@@ -343,23 +390,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Passwords.testPasswords" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com.romanceabroad" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Passwords" />
-      <option name="METHOD_NAME" value="testPasswords" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Registration.testLoginViaJoinButtonUsingDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Registration.testLoginViaJoinButtonUsingDataProviderWithCsvFile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="comromanceabroad" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Registration" />
-      <option name="METHOD_NAME" value="testLoginViaJoinButtonUsingDataProvider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.romanceabroad.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.romanceabroad.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.romanceabroad.ui.Registration" />
+      <option name="METHOD_NAME" value="testLoginViaJoinButtonUsingDataProviderWithCsvFile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -370,7 +411,7 @@
     <configuration name="Search.testTabSearchWithRandomChoice" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.romanceabroad" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Search" />
+      <option name="MAIN_CLASS_NAME" value="com.romanceabroad.ui.Search" />
       <option name="METHOD_NAME" value="testTabSearchWithRandomChoice" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -379,20 +420,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="comromanceabroad" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.Registration.testLoginViaJoinButtonUsingDataProvider" />
-      <item itemvalue="TestNG.Passwords.testPasswords" />
       <item itemvalue="TestNG.Search.testTabSearchWithRandomChoice" />
       <item itemvalue="TestNG.GiftsSearchTests.searchGiftsTests" />
       <item itemvalue="TestNG.GiftsSearchTests.searchGiftsTestsWithCsvFile" />
+      <item itemvalue="TestNG.Registration.testLoginViaJoinButtonUsingDataProviderWithCsvFile" />
+      <item itemvalue="TestNG./Users/rodionovmax/Documents/sandbox/TestNG.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/rodionovmax/Documents/sandbox/TestNG.xml" />
+        <item itemvalue="TestNG.Registration.testLoginViaJoinButtonUsingDataProviderWithCsvFile" />
         <item itemvalue="TestNG.Search.testTabSearchWithRandomChoice" />
         <item itemvalue="TestNG.GiftsSearchTests.searchGiftsTestsWithCsvFile" />
         <item itemvalue="TestNG.GiftsSearchTests.searchGiftsTests" />
-        <item itemvalue="TestNG.Passwords.testPasswords" />
-        <item itemvalue="TestNG.Registration.testLoginViaJoinButtonUsingDataProvider" />
       </list>
     </recent_temporary>
   </component>
@@ -410,35 +461,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GiftsSearchTests_searchGiftsTests - 2019.05.06 at 15h 17m 18s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTests" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 11m 44s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTests - 2019.05.06 at 15h 18m 49s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTests" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 14m 26s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTestsWithCsvFile - 2019.05.06 at 15h 43m 11s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTestsWithCsvFile" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 15m 59s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTestsWithCsvFile - 2019.05.06 at 15h 49m 28s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTestsWithCsvFile" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 17m 25s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTestsWithCsvFile - 2019.05.06 at 15h 54m 15s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTestsWithCsvFile" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 17m 55s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTestsWithCsvFile - 2019.05.07 at 08h 32m 37s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTestsWithCsvFile" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 23m 26s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTests - 2019.05.07 at 08h 33m 07s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTests" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 33m 10s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTestsWithCsvFile - 2019.05.07 at 08h 35m 19s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTestsWithCsvFile" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 40m 21s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GiftsSearchTests_searchGiftsTestsWithCsvFile - 2019.05.07 at 08h 37m 44s.xml">
-      <configuration name="GiftsSearchTests.searchGiftsTestsWithCsvFile" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 44m 06s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Search_testTabSearchWithRandomChoice - 2019.05.07 at 17h 36m 55s.xml">
-      <configuration name="Search.testTabSearchWithRandomChoice" configurationId="TestNG" />
+    <history-entry file="_Users_rodionovmax_Documents_sandbox_TestNG_xml - 2019.05.18 at 22h 45m 26s.xml">
+      <configuration name="/Users/rodionovmax/Documents/sandbox/TestNG.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -457,8 +508,8 @@
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32739726" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" visible="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3041096" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3041096" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -532,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson#6 Notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="228" column="11" selection-start-line="228" selection-start-column="11" selection-end-line="228" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson#7 Notes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -567,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Tours.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com.romanceabroad.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -584,27 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Passwords.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Passwords.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="36" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BaseActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2298">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,21 +635,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataProviders.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/DataProviders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="104" column="43" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
@@ -639,18 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Gifts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HowItWorks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/HowItWorks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
@@ -660,38 +662,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Locators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Photos.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/PhotosPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PrettyWoman.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/PrettyWomanPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RegistrationForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/RegistrationFormPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
           <caret line="58" column="73" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
@@ -701,17 +686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="34" selection-start-line="34" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Conditions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Conditions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -737,14 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson#9 Notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HowItWorksTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/HowItWorksTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
@@ -754,7 +722,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PhotosTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/PhotosTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
@@ -764,26 +732,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GiftsTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/GiftsTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1225">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Registration.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/MainPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="784">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Search.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/BlogTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="67">
+          <caret line="30" column="83" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/BlogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/GiftsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson#6 Notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="228" column="11" selection-start-line="228" selection-start-column="11" selection-end-line="228" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson#9 Notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson#11 Notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/BaseActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/BaseUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="56" column="55" selection-start-line="56" selection-start-column="55" selection-end-line="56" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1751#1767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
           <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -791,23 +835,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainPageTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/Locators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="173">
+          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/romanceabroad/ui/Tours.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/romanceabroad/ui/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BlogTests.java">
+    <entry file="file://$PROJECT_DIR$/TestNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
