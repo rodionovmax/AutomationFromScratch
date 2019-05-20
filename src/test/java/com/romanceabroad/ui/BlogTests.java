@@ -48,7 +48,7 @@ public class BlogTests extends BaseUI{
         main.scrollToBottomOfPage();
 
         // Scroll up
-        main.ajaxScrollUp();
+        main.ajaxScrollUp("window.scrollBy(0,-250)");
         main.javaWait(5);
     }
 

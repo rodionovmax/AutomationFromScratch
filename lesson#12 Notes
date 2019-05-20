@@ -4,3 +4,10 @@
 The real case is when I enter digits for Jassby code into cells
 
 3. UseHash() test shows how to use HashMap as input data
+
+4. Add @Optional declarations for setup method in @BeforeMethod.
+    a. Add conditions for each browser
+    b. Add switch for Web
+    c. Add switch for Mobile
+
+5. Create TestNGMobile.xml for tests in mobile emulators

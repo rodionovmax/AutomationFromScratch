@@ -3,33 +3,35 @@
 <suite name = "Mobile Test Suite" parallel="none">
 
 
-    <test name="Galaxy S5 tests">
+<!--    <test name="Galaxy S5 tests">-->
 
-        <parameter name="testBox" value="mobile"/>
-        <parameter name="browser" value="Chrome"/>
-        <parameter name="mobileDevice" value="Galaxy S5"/>
+<!--        <parameter name="testBox" value="mobile"/>-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="mobileDevice" value="Galaxy S5"/>-->
 
-        <classes>
-            <!--<class name="com.romanceabroad.ui.Search"/>-->
-            <class name="com.romanceabroad.ui.Tours"/>
+<!--        <classes>-->
+<!--            &lt;!&ndash;<class name="com.romanceabroad.ui.Search"/>&ndash;&gt;-->
+<!--            <class name="com.romanceabroad.ui.Tours"/>-->
+<!--            <class name="com.romanceabroad.ui.Registration"/>-->
 
-        </classes>
+<!--        </classes>-->
 
-    </test>
+<!--    </test>-->
 
-    <test name="iPhone 6/7/8 tests">
+<!--    <test name="iPhone 6/7/8 tests">-->
 
-        <parameter name="testBox" value="mobile"/>
-        <parameter name="browser" value="Chrome"/>
-        <parameter name="mobileDevice" value="iPhone 6/7/8"/>
+<!--        <parameter name="testBox" value="mobile"/>-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="mobileDevice" value="iPhone 6/7/8"/>-->
 
-        <classes>
-            <!--<class name="com.romanceabroad.ui.Search"/>-->
-            <class name="com.romanceabroad.ui.Tours"/>
+<!--        <classes>-->
+<!--            &lt;!&ndash;<class name="com.romanceabroad.ui.Search"/>&ndash;&gt;-->
+<!--            <class name="com.romanceabroad.ui.Tours"/>-->
+<!--            <class name="com.romanceabroad.ui.Registration"/>-->
 
-        </classes>
+<!--        </classes>-->
 
-    </test>
+<!--    </test>-->
 
     <test name="iPhone X tests">
 
@@ -39,7 +41,9 @@
 
         <classes>
             <!--<class name="com.romanceabroad.ui.Search"/>-->
-            <class name="com.romanceabroad.ui.Tours"/>
+<!--            <class name="com.romanceabroad.ui.Tours"/>-->
+<!--            <class name="com.romanceabroad.ui.Registration"/>-->
+            <class name="com.romanceabroad.ui.PhotosTests"/>
 
         </classes>
 

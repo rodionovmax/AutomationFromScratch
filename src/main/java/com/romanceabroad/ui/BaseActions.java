@@ -114,9 +114,9 @@ public class BaseActions {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    public void ajaxScrollUp(){
+    public void ajaxScrollUp(String scrollBy){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,-250)", "");
+        js.executeScript(scrollBy, "");
     }
 
     public void javaWait(int ms){

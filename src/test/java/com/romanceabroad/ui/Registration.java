@@ -1,5 +1,6 @@
 package com.romanceabroad.ui;
 
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Registration extends BaseUI{
@@ -21,6 +22,7 @@ public class Registration extends BaseUI{
         registrationForm.getStartedWithDataProvider(email, password);
         registrationForm.getStartedSecondPageWithDataProvider(nickname, dayOfBirth, monthOfBirth, yearOfBirth, phoneNumber, city);
     }
+
 
 
     @Test(dataProvider = "Registration2", dataProviderClass = DataProviders.class)
