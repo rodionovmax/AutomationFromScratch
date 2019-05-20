@@ -39,11 +39,13 @@ public class MainPage extends BaseActions{
     }
 
     public void clickMobileMenu(ITestContext context){
-        String testBox = context.getCurrentXmlTest().getParameter("browser");
-        if(testBox.contains("mobileChrome")){
+        String testBox = context.getCurrentXmlTest().getParameter("testBox");
+        if(testBox.contains("mobile")){
             driver.findElement(Locators.MOBILE_MENU).click();
         }
     }
+
+
 
 
 

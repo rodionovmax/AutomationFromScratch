@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Web Test Suite" parallel="none">
+
+
+    <test name="ChromeTestCases">
+
+        <parameter name="testBox" value="web"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="mobileDevice" value="null"/>
+
+        <classes>
+<!--            <class name="com.romanceabroad.ui.Search"/>-->
+            <class name="com.romanceabroad.ui.Tours"/>
+
+        </classes>
+
+    </test>
+
+    <test name="FirefoxTestCases">
+
+        <parameter name="testBox" value="web"/>
+        <parameter name="browser" value="firefox"/>
+        <parameter name="mobileDevice" value="null"/>
+
+        <classes>
+<!--            <class name="com.romanceabroad.ui.Search"/>-->
+            <class name="com.romanceabroad.ui.Tours"/>
+
+        </classes>
+
+    </test>
+
+<!--    <test name="IETestCases">-->
+
+<!--        <parameter name="testBox" value="web"/>-->
+<!--        <parameter name="browser" value="ie"/>-->
+<!--        <parameter name="mobileDevice" value="null"/>-->
+
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.romanceabroad.ui.Search"/>&ndash;&gt;-->
+<!--            <class name="com.romanceabroad.ui.Tours"/>-->
+
+<!--        </classes>-->
+
+<!--    </test>-->
+
+
+</suite>

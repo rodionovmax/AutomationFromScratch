@@ -31,42 +31,80 @@ public class BaseUI {
     PhotosPage photos;
     HowItWorks howItWorks;
 
+    protected TestBox testBox;
+    protected TestBrowser testBrowser;
+
+    protected enum TestBox {
+        WEB, MOBILE
+    }
+
+    protected enum TestBrowser {
+        CHROME, FIREFOX, IE
+    }
 
 
     @BeforeMethod(groups = {"admin", "user"})
-    @Parameters("browser")
-    public void setup(@Optional("chrome") String browser,Method method)
+    @Parameters({"browser", "testBox", "mobileDevice"})
+    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional String device) {
 
-    {
-        if (browser.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver", "geckodriver");
-            driver = new FirefoxDriver();
-
-        } else if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "chromedriver");
-            driver = new ChromeDriver();
-            driver.get("chrome://settings/clearBrowserData");
-        } else if (browser.equalsIgnoreCase("IE")) {
-            System.setProperty("webdriver.ie.driver", "IEDriverServer");
-            driver = new InternetExplorerDriver();
-            driver.manage().addCookie(new Cookie("test", "test"));
+        if (box.equalsIgnoreCase("web")) {
+            testBox = TestBox.WEB;
+        } else if (box.equalsIgnoreCase("mobile")) {
+            testBox = TestBox.MOBILE;
+        }
+        if (browser.equalsIgnoreCase("chrome")) {
+            testBrowser = TestBrowser.CHROME;
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            testBrowser = TestBrowser.FIREFOX;
+        } else if (browser.equalsIgnoreCase("ie")) {
+            testBrowser = TestBrowser.IE;
         }
 
-        else if (browser.equalsIgnoreCase("mobileChrome")) {
-            Map<String, String> mobileEmulation = new HashMap<String, String>();
-            mobileEmulation.put("deviceName", "iPhone X");
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
-            System.setProperty("webdriver.chrome.driver", "chromedriver");
-            driver = new ChromeDriver(chromeOptions);
-            driver.get("chrome://settings/clearBrowserData");
+        switch (testBox) {
+
+            case WEB:
+
+                switch (testBrowser) {
+                    case FIREFOX:
+                        System.setProperty("webdriver.gecko.driver", "geckodriver");
+                        driver = new FirefoxDriver();
+                        break;
+
+                    case CHROME:
+                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+                        driver = new ChromeDriver();
+                        driver.get("chrome://settings/clearBrowserData");
+                        break;
+
+                    case IE:
+                        System.setProperty("webdriver.ie.driver", "IEDriverServer");
+                        driver = new InternetExplorerDriver();
+                        driver.manage().addCookie(new Cookie("test", "test"));
+                        break;
+
+                    default:
+                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+                        driver = new ChromeDriver();
+                        driver.get("chrome://settings/clearBrowserData");
+                        break;
+                }
+                break;
+
+            case MOBILE:
+                switch (testBrowser) {
+                    case CHROME:
+                        Map<String, String> mobileEmulation = new HashMap<String, String>();
+                        mobileEmulation.put("deviceName", device);
+                        ChromeOptions chromeOptions = new ChromeOptions();
+                        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+                        driver = new ChromeDriver(chromeOptions);
+                        driver.get("chrome://settings/clearBrowserData");
+                        break;
+                }
+
         }
 
-        else {
-            System.setProperty("webdriver.chrome.driver", "chromedriver");
-            driver = new ChromeDriver();
-            driver.get("chrome://settings/clearBrowserData");
-        }
 
         wait = new WebDriverWait(driver, 5);
         main = new MainPage(driver, wait);

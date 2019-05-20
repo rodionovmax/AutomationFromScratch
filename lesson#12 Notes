@@ -1,0 +1,6 @@
+1. noTestNg() test shows how to use Data Provider and loop for multiple inputs in one test
+
+2. use2Lists() test shows how to use two arrays to able input values from second array to web-elements that represented in first array
+The real case is when I enter digits for Jassby code into cells
+
+3. UseHash() test shows how to use HashMap as input data

@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Mobile Test Suite" parallel="none">
+
+
+    <test name="Galaxy S5 tests">
+
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="mobileDevice" value="Galaxy S5"/>
+
+        <classes>
+            <!--<class name="com.romanceabroad.ui.Search"/>-->
+            <class name="com.romanceabroad.ui.Tours"/>
+
+        </classes>
+
+    </test>
+
+    <test name="iPhone 6/7/8 tests">
+
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="mobileDevice" value="iPhone 6/7/8"/>
+
+        <classes>
+            <!--<class name="com.romanceabroad.ui.Search"/>-->
+            <class name="com.romanceabroad.ui.Tours"/>
+
+        </classes>
+
+    </test>
+
+    <test name="iPhone X tests">
+
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="mobileDevice" value="iPhone X"/>
+
+        <classes>
+            <!--<class name="com.romanceabroad.ui.Search"/>-->
+            <class name="com.romanceabroad.ui.Tours"/>
+
+        </classes>
+
+    </test>
+
+
+</suite>

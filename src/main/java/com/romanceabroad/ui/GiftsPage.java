@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 import static org.testng.Assert.assertTrue;
 
 public class GiftsPage extends BaseActions{
@@ -89,6 +91,17 @@ public class GiftsPage extends BaseActions{
     public void clearTypeClick(String gift){
         driver.findElement(Locators.GIFTS_SEARCH_FIELD).clear();
         driver.findElement(Locators.GIFTS_SEARCH_FIELD).sendKeys(gift);
+        driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
+    }
+
+
+    public List<WebElement> takeGiftsSearchField(){
+        List<WebElement> elements = driver.findElements(Locators.GIFTS_SEARCH_FIELD);
+        return elements;
+    }
+
+
+    public void clickSearchGiftsButton(){
         driver.findElement(Locators.GIFTS_SEARCH_BUTTON).click();
     }
 

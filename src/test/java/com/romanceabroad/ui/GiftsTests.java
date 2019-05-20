@@ -1,6 +1,7 @@
 package com.romanceabroad.ui;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -114,5 +115,6 @@ public class GiftsTests extends BaseUI {
         productTitleInDescription = gifts.openGiftDetailsAndVerifyPageTitle();
         Assert.assertTrue(productTitleInDescription.contains("Chocolate"));
     }
+
 
 }
