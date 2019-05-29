@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -45,7 +46,8 @@ public class BaseUI {
 
     @BeforeMethod(groups = {"admin", "user"})
     @Parameters({"browser", "testBox", "mobileDevice"})
-    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional String device) {
+    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional String device, Method method) {
+        Reports.start(method.getName());
 
         if (box.equalsIgnoreCase("web")) {
             testBox = TestBox.WEB;
@@ -120,7 +122,11 @@ public class BaseUI {
 
 
     @AfterMethod(groups = {"admin", "user"})
-    public void tearDown() {
+    public void tearDown(ITestResult testResult) {
+        if(testResult.getStatus()==ITestResult.FAILURE){
+            Reports.fail(driver, testResult.getName());
+        }
+        Reports.stop();
 //        driver.quit();
         System.out.println("Close browser");
     }

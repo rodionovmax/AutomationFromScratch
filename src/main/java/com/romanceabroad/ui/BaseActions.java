@@ -240,6 +240,15 @@ public class BaseActions {
         }
     }
 
+    //Method to replace try-catch for Thread.sleep
+    public void javaWaitInSec(int sec){
+        try {
+            Thread.sleep(sec * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 }

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Web Test Suite" duration-ms="64166" started-at="2019-05-29T12:17:54Z" finished-at="2019-05-29T12:18:58Z">
+    <groups>
+      <group name="admin">
+        <method signature="Tours.testTabTours(org.testng.ITestContext)[pri:0, instance:com.romanceabroad.ui.Tours@5594a1b5]" name="testTabTours" class="com.romanceabroad.ui.Tours"/>
+        <method signature="Tours.testTabTours(org.testng.ITestContext)[pri:0, instance:com.romanceabroad.ui.Tours@35f983a6]" name="testTabTours" class="com.romanceabroad.ui.Tours"/>
+      </group> <!-- admin -->
+    </groups>
+    <test name="ChromeTestCases" duration-ms="29185" started-at="2019-05-29T12:17:54Z" finished-at="2019-05-29T12:18:23Z">
+      <class name="com.romanceabroad.ui.Tours">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.Tours@5594a1b5]" name="setup" is-config="true" duration-ms="10930" started-at="2019-05-29T12:17:54Z" finished-at="2019-05-29T12:18:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.Tours.testTabTours(org.testng.ITestContext)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testTabTours(org.testng.ITestContext)[pri:0, instance:com.romanceabroad.ui.Tours@5594a1b5]" name="testTabTours" duration-ms="17728" started-at="2019-05-29T12:18:05Z" finished-at="2019-05-29T12:18:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b7a7f33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTabTours -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.Tours@5594a1b5]" name="tearDown" is-config="true" duration-ms="481" started-at="2019-05-29T12:18:23Z" finished-at="2019-05-29T12:18:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTabTours status=SUCCESS method=Tours.testTabTours(org.testng.ITestContext)[pri:0, instance:com.romanceabroad.ui.Tours@5594a1b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.romanceabroad.ui.Tours -->
+    </test> <!-- ChromeTestCases -->
+    <test name="FirefoxTestCases" duration-ms="34960" started-at="2019-05-29T12:18:23Z" finished-at="2019-05-29T12:18:58Z">
+      <class name="com.romanceabroad.ui.Tours">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.Tours@35f983a6]" name="setup" is-config="true" duration-ms="11357" started-at="2019-05-29T12:18:23Z" finished-at="2019-05-29T12:18:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.Tours.testTabTours(org.testng.ITestContext)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testTabTours(org.testng.ITestContext)[pri:0, instance:com.romanceabroad.ui.Tours@35f983a6]" name="testTabTours" duration-ms="23475" started-at="2019-05-29T12:18:34Z" finished-at="2019-05-29T12:18:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5adb0db3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTabTours -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.Tours@35f983a6]" name="tearDown" is-config="true" duration-ms="125" started-at="2019-05-29T12:18:58Z" finished-at="2019-05-29T12:18:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTabTours status=SUCCESS method=Tours.testTabTours(org.testng.ITestContext)[pri:0, instance:com.romanceabroad.ui.Tours@35f983a6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.romanceabroad.ui.Tours -->
+    </test> <!-- FirefoxTestCases -->
+  </suite> <!-- Web Test Suite -->
+</testng-results>

@@ -14,14 +14,14 @@ public class Tours extends BaseUI{
     @Test(groups = {"admin"})
     public void testTabTours(ITestContext context){
         main.clickMobileMenu(context);
+        Reports.log("Wait Tab Tours!");
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_TOURS));
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Reports.log("Click tab Tours");
         driver.findElements(Locators.TAB_TOURS).get(Data.INDEX_TOUR).click();
+        Reports.log("Take current URL");
         currentUrl = driver.getCurrentUrl();
+        Reports.log("Current URL: " + currentUrl);
+        Reports.log("Do comparison between current URL and Expected URL: " + Data.EXPECTED_URL_TOURS);
         Assert.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS);
     }
 

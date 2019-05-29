@@ -1,1 +1,14 @@
 1. Added <properties> in pom.xml to generate reports
+2. How to create TestNG reports:
+   - Go to Run -> Edit Configurations
+   - In left part choose tests that you want you get reports for
+   - Test kind: Suite
+   - Suite: choose your xml file
+   - Output directory: in project create a folder where reports will be saved
+   - Check use default reporters
+   - Change name for reports
+
+3.a. Avenstack. In pom.xml added another dependency for reports.
+  b. In java main directory added class reports for custom reports
+  c. In BaseUI in @BeforeMethod added Reports.start(method.getName());
+  d. In @AfterMethod added if-condition for failures in reports and to stop reports
