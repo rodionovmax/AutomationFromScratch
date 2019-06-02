@@ -22,3 +22,6 @@ Jenkins
     d. In Build Settings check E-mail notifications and enter email
     e. In Post Build Actions select from dropdown Publish TestNG Results
     f. Apply and Save
+7. Enable HTML Publisher Plugin
+8. Go in Project -> Configure -> Post-build Actions: enter path to HTML directory where report should save. Give name. Apply and Save
+9. Manage Jenkins -> Script Console -> write command JENKINS_JAVA_OPTIONS="-Djava.awt.headless=true -Dhudson.remoting.Launcher.pingIntervalSec=0" to fix issue with CSS in reports
