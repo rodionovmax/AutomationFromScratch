@@ -22,6 +22,9 @@ import org.openqa.selenium.Cookie;
 
 public class BaseUI {
 
+    private String value;
+    public BaseUI(){value = null;}
+
     WebDriver driver;
     WebDriverWait wait;
     MainPage main;
@@ -46,7 +49,7 @@ public class BaseUI {
 
     @BeforeMethod(groups = {"admin", "user"})
     @Parameters({"browser", "testBox", "mobileDevice"})
-    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional String device, Method method) {
+    public void setup(@Optional("chrome") String browser, @Optional("mobile") String box, @Optional("Galaxy S5") String device, Method method) {
         Reports.start(method.getName());
 
         if (box.equalsIgnoreCase("web")) {
@@ -85,8 +88,16 @@ public class BaseUI {
                         break;
 
                     default:
+//                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+//                        driver = new ChromeDriver();
+//                        driver.get("chrome://settings/clearBrowserData");
+//                        break;
+                        Map<String, String> mobileEmulation = new HashMap<String, String>();
+                        mobileEmulation.put("deviceName", device);
+                        ChromeOptions chromeOptions = new ChromeOptions();
+                        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
                         System.setProperty("webdriver.chrome.driver", "chromedriver");
-                        driver = new ChromeDriver();
+                        driver = new ChromeDriver(chromeOptions);
                         driver.get("chrome://settings/clearBrowserData");
                         break;
                 }
@@ -118,6 +129,12 @@ public class BaseUI {
         howItWorks = new HowItWorks(driver, wait);
         driver.manage().window().maximize();
         driver.get(Data.MAIN_URL);
+
+        value = box;
+    }
+
+    public String getValue(){
+        return value;
     }
 
 

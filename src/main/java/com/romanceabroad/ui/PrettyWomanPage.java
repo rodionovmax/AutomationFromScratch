@@ -15,4 +15,9 @@ public class PrettyWomanPage extends BaseActions{
         wait.until(ExpectedConditions.elementToBeClickable(Locators.FILTER_SEARCH_BUTTON));
         driver.findElement(Locators.FILTER_SEARCH_BUTTON).click();
     }
+
+    public void clickPrettyWoman(){
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_SEARCH));
+        driver.findElement(Locators.TAB_SEARCH).click();
+    }
 }

@@ -11,7 +11,8 @@ public class PhotosTests extends BaseUI {
 
     @Test
     public void swipePictures(ITestContext context){
-        main.clickMobileMenu(context);
+//        main.clickMobileMenu(context);
+        main.clickMobileMenu(getValue());
         main.goToPhotos();
         wait.until(ExpectedConditions.elementToBeClickable(Locators.PICTURE));
         List<WebElement> pictures = driver.findElements(Locators.PICTURE);

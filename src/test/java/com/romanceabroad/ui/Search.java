@@ -5,6 +5,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class Search extends BaseUI{
 
     String currentUrl;
@@ -18,8 +20,7 @@ public class Search extends BaseUI{
 
     @Test(dataProvider = "ValueOfDropDownList", dataProviderClass = DataProviders.class)
     public void testTabSearch(String minAge,  String maxAge, String filterOfSearch, boolean requirement){
-        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_SEARCH));
-        driver.findElement(Locators.TAB_SEARCH).click();
+        prettyWoman.clickPrettyWoman();
         currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
 
@@ -46,8 +47,7 @@ public class Search extends BaseUI{
     @Test
     public void testTabSearchWithRandomChoice() throws Exception {
 
-        wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_SEARCH));
-        driver.findElement(Locators.TAB_SEARCH).click();
+        prettyWoman.clickPrettyWoman();
         currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
         for (int i = 0; i < 15; i++) {
@@ -87,6 +87,13 @@ public class Search extends BaseUI{
             checkbox.click();
             System.out.println("Checkbox is selected!");
         }
+    }
+
+    @Test
+    public void testImages(){
+        prettyWoman.clickPrettyWoman();
+        List<WebElement> images = driver.findElements(Locators.IMAGES_SEARCH);
+        System.out.println(images.size());
     }
 
 

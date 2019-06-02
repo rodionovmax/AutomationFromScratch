@@ -1,0 +1,5 @@
+SauceLabs
+
+0. Create a separate class to launch project with SauceLabs capabilities
+1. Setup configuration https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/
+2. In order to run tests via SauceLabs in test class change extends BaseUITestWithSauceLabs

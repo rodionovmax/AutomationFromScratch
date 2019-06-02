@@ -38,12 +38,39 @@ public class MainPage extends BaseActions{
         driver.findElement(Locators.TAB_GIFTS).click();
     }
 
-    public void clickMobileMenu(ITestContext context){
-        String testBox = context.getCurrentXmlTest().getParameter("testBox");
-        if(testBox.contains("mobile")){
+//    public void clickMobileMenu(ITestContext context){
+//        String testBox = context.getCurrentXmlTest().getParameter("testBox");
+//        if(testBox.contains("mobile")){
+//            driver.findElement(Locators.MOBILE_MENU).click();
+//        }
+//    }
+
+
+
+    /** Solution 1 to test as a mobile device */
+    /*public void clickMobileMenu(){
+        try {
+            driver.findElement(Locators.MOBILE_MENU).click();
+        } catch (Exception e){
+
+        }
+    }*/
+
+    /** Solution 2 to test as a mobile device */
+    /*public void clickMobileMenu(){
+        if(driver.findElements(Locators.MOBILE_MENU).size() > 0){
+            driver.findElement(Locators.MOBILE_MENU).click();
+        }
+    }*/
+
+    /** Solution 3 to test as a mobile device */
+    public void clickMobileMenu(String box){
+        if(box.contains("mobile")){
             driver.findElement(Locators.MOBILE_MENU).click();
         }
     }
+
+
 
 
 

@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 public class Locators {
 
     public static final By TAB_SEARCH = By.xpath("//a[@href='https://romanceabroad.com/users/search']");
+    public static final By IMAGES_SEARCH = By.xpath("//div[@class='g-users-gallery__item col-xs-6 col-sm-3 col-md-3 col-lg-3 ']");
     public static final By TAB_TOURS = By.xpath("//a[@href='https://romanceabroad.com/store/sweets/20-tour_to_ukraine']");
     // locators for testOpenBlogVerifyNumberOfArticlesThenOpenFirstone()
     public static final By TAB_GIFTS = By.xpath("//a[@href='https://romanceabroad.com/store/category-sweets']");

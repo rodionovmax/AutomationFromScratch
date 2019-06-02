@@ -1,0 +1,24 @@
+Jenkins
+
+1. Download Jenkins for Mac (not Jenkins server, just a version for local machine)
+2. Install suggested tools
+3. Create account and password
+4. Manage Jenkins -> Manage plugins -> Check: a. Maven Integration plugin
+                                              b. TestNG Results plugin
+                                              c. Restart Jenkins
+5. Manage Jenkins -> Global Tool Configuration -> 1. Add JDK
+                                              a. Uncheck Install automatically
+                                              b. Enter JAVA_HOME (take output from console "echo $JAVA_HOME". In my case it was /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home)
+                                              c. give any name, for example jdk1.8.0_191
+                                              2. Use default maven setting
+                                              3. Use default global maven settings
+                                              4. Add Maven -> Install automtically from Apache (current version 3.6.1) and give name
+                                              5. Apply and Save
+6. Configure first project
+    a. Configure new Project and new Item -> Enter name
+    b. Select Maven project
+    c. In Build: copy and paste path of your pom.xml from your project, like /Users/rodionovmax/Documents/sandbox/pom.xml
+                 find Goals and options -> Type: clean test
+    d. In Build Settings check E-mail notifications and enter email
+    e. In Post Build Actions select from dropdown Publish TestNG Results
+    f. Apply and Save
