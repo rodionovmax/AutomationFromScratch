@@ -1,0 +1,11 @@
+1. ToursWithSauceLabs which extends BaseUITestWithSauceLabs
+
+2. Script to fix CSS in html reports in Jenkins
+Paste to Script Console following script:
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "sandbox allow-scripts; default-src *; style-src * http://* 'unsafe-inline' 'unsafe-eval'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'");
+
+3. Batch testing
+a. Created class Helper with different methods
+b. Created class FileTest with tests
+
+
