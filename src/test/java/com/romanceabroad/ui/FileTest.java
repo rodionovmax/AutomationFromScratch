@@ -54,7 +54,7 @@ public class FileTest {
     public void testAddress(int line, String input){
         final int Address_COLUMN_START = 31;
         final int Address_COLUMN_END = 40;
-        if(!checkLine(input, Address_COLUMN_START, Address_COLUMN_END, Checks.REQUIRED, Checks.REQUIRED, Checks.OPTIONAL, Checks.RESTRICTED))
+        if(!checkLine(input, Address_COLUMN_START, Address_COLUMN_END, Checks.REQUIRED, Checks.REQUIRED, Checks.OPTIONAL, Checks.OPTIONAL))
             Assert.fail("Error in Address 1 " + line + ": " + input);
     }
 

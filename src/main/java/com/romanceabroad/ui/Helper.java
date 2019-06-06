@@ -88,4 +88,33 @@ public class Helper {
         return hm;
     }
 
+    /** Get from file just one column and returns as ArrayList<String>
+     * @param startIndex - beginning of column
+     * @param endIndex - end of column
+     * @return
+     */
+    public static ArrayList<String> getColumnFromFile(int startIndex, int endIndex){
+        ArrayList<String> dataFromFile = getAllLinesFromFile();
+        ArrayList<String> outData = new ArrayList<>();
+        for (String o : dataFromFile) {
+            outData.add(o.substring(startIndex - 1, endIndex).trim());
+        }
+        return outData;
+    }
+
+    /** Counts how many times each word appears in ArrayList<String>
+     * and returns result as HashMap<String, Integer>, where
+     * K(Key) - word itself
+     * V - number of times word appeared
+     * @param input - input ArrayList<String>
+     * @return
+     */
+    public static HashMap<String, Integer> calculateElementsCount(ArrayList<String> input){
+        HashMap<String, Integer> out = new HashMap<>();
+        for (String o : input){
+            out.put(o, out.getOrDefault(o, 0) + 1);
+        }
+        return out;
+    }
+
 }
