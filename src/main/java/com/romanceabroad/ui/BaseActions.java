@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.net.ssl.HttpsURLConnection;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
@@ -135,23 +136,7 @@ public class BaseActions {
         }
     }
 
-    // Method for link verification
-    public void verifyLinkActive(String linkUrl){
-        try {
-            URL url = new URL(linkUrl);
-            HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
-            httpURLConnect.setConnectTimeout(3000);
-            httpURLConnect.connect();
-            if (httpURLConnect.getResponseCode() == 200){
-                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
-            }
-            if (httpURLConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND){
-                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + " - " + HttpURLConnection.HTTP_NOT_FOUND);
-            }
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-    }
+
 
 //    public void checkImages(List<WebElement> imagetags) throws IOException {
 //        javaWaitSec(5);
@@ -245,6 +230,53 @@ public class BaseActions {
         try {
             Thread.sleep(sec * 1000);
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //
+    /*public static void verifyLinkActive(String linkUrl){
+        try {
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+            httpURLConnect.setConnectTimeout(3000);
+            httpURLConnect.connect();
+            if (httpURLConnect.getResponseCode() == 200){
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+            }
+            if (httpURLConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND){
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }*/
+
+
+    public void checkLinksOnWebPage(String typeElement, String attribute){
+        List<WebElement> links = driver.findElements(By.xpath(typeElement));
+        System.out.println("Total links are: " + links.size());
+        for (int i = 0; i < links.size(); i++) {
+            WebElement element = links.get(i);
+            String url = element.getAttribute(attribute);
+            verifyLinkActive(url);
+        }
+    }
+
+    // Method for link verification
+    public void verifyLinkActive(String linkUrl){
+        try {
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnect = (HttpURLConnection) url.openConnection();
+            httpURLConnect.setConnectTimeout(3000);
+            httpURLConnect.connect();
+            if (httpURLConnect.getResponseCode() == 200){
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage());
+            }
+            if (httpURLConnect.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND || httpURLConnect.getResponseCode() ==  HttpURLConnection.HTTP_INTERNAL_ERROR){
+                System.out.println(linkUrl + " - " + httpURLConnect.getResponseMessage() + " - " + HttpURLConnection.HTTP_NOT_FOUND);
+            }
+        } catch (Exception e){
             e.printStackTrace();
         }
     }

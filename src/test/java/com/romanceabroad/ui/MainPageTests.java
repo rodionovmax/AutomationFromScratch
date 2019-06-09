@@ -62,4 +62,42 @@ public class MainPageTests extends BaseUI{
             links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         }
     }
+
+    @Test
+    public void checkAllLinks(){
+        Reports.log("Start checking all links on main page");
+        main.checkLinksOnWebPage("//a", "href");
+        Reports.log("I collect tabs in list");
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+        for (int i = 0; i < links.size(); i++) {
+            Reports.log("I click this tab: " + links.get(i).getText());
+            main.ajaxClick(links.get(i));
+            Reports.log("I collect all links on this tab");
+            main.checkLinksOnWebPage("//a", "href");
+            Reports.log("I return to main page");
+            driver.get(Data.MAIN_URL);
+            Reports.log("I collect new list of tabs");
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+
+        }
+    }
+
+    @Test
+    public void checkAllImages (){
+        Reports.log("Start checking all images on main page");
+        main.checkLinksOnWebPage("//img", "src");
+        Reports.log("I collect tabs in list");
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+        for (int i = 0; i < links.size(); i++) {
+            Reports.log("I click this tab: " + links.get(i).getText());
+            main.ajaxClick(links.get(i));
+            Reports.log("I collect all images on this tab");
+            main.checkLinksOnWebPage("//img", "src");
+            Reports.log("I return to main page");
+            driver.get(Data.MAIN_URL);
+            Reports.log("I collect new list of tabs");
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
+
+        }
+    }
 }

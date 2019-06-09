@@ -8,4 +8,15 @@ System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "sandbox allow-sc
 a. Created class Helper with different methods
 b. Created class FileTest with tests
 
+4. Selenium Grid
+a. Created new project for Selenium Grid
+b. Created parent.java in Test
+c. Created hub and save it as Hub - 3.8.1 - 4444.bat // This step is to activate Hub
+d. Download Selenium standalone server from seleniumhq
+e. type in browser localhost:4444/grid/console
+f. create node.bat to register node
+g. type 10.1.1.156:4444/wd/hub
 
+5. Link crawler
+a. Created verifyLinkActive() and checkLinksOnWebPage() in BaseActions
+b. Created test checkAllLinksOnMainPage in MainPageTests

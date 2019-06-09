@@ -49,7 +49,7 @@ public class BaseUI {
 
     @BeforeMethod(groups = {"admin", "user"})
     @Parameters({"browser", "testBox", "mobileDevice"})
-    public void setup(@Optional("chrome") String browser, @Optional("mobile") String box, @Optional("Galaxy S5") String device, Method method) {
+    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional("Galaxy S5") String device, Method method) {
         Reports.start(method.getName());
 
         if (box.equalsIgnoreCase("web")) {
