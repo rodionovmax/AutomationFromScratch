@@ -44,4 +44,6 @@ public class Data {
 
     public static final String GIFTS_EXPECTED_URL = "https://romanceabroad.com/store/category-sweets";
 
+    public static final String LOCATOR_TAB_SEARCH = "//a[@href='https://romanceabroad.com/users/search']";
+
 }

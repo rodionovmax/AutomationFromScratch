@@ -1,0 +1,30 @@
+1. Docker
+a. Install Docker /** https://github.com/SeleniumHQ/docker-selenium */ read everything here
+b. run some script to install (find in documentation how to install on Mac)
+c. In BaseUI add cases to launch Docker
+d. Change testNG.xml to run tests via Docker
+e. Created docker-compose.yml
+
+2. Page factories
+a. In MainPage created @FindBy // That's not the best solution because Page Factory works just in class where it was initialized
+        and therefore it puts limits on using locators from Locators and strings from Data. Plus we can't use ExplicitWait
+        because it's looking for webElement
+
+3. Soft Assertions
+a. Initialize SoftAssert in BaseUI
+b. soft.AssertAll();
+    The difference between hard assertions and soft assertions is that soft assertions allow to run test to the end and then
+    print results w/o breaking test if assert fails
+
+4. Split strings
+
+5. iFrame
+
+6. Record video in TestNG
+a. in test type @Video(name = "video_name")
+b. add dependency in pom.xml video-recorder-testng
+c. in Test class before class declaration add @Listeners(VideoListener.class), like in Lesson17
+
+7. Nested Loops
+
+

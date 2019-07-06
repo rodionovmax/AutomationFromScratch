@@ -1,11 +1,15 @@
 package com.romanceabroad.ui;
 
 import com.romanceabroad.ui.*;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -14,10 +18,13 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.openqa.selenium.Cookie;
+import org.testng.asserts.SoftAssert;
 
 
 public class BaseUI {
@@ -34,6 +41,7 @@ public class BaseUI {
     GiftsPage gifts;
     PhotosPage photos;
     HowItWorks howItWorks;
+    SoftAssert soft = new SoftAssert();
 
     protected TestBox testBox;
     protected TestBrowser testBrowser;
@@ -43,13 +51,13 @@ public class BaseUI {
     }
 
     protected enum TestBrowser {
-        CHROME, FIREFOX, IE
+        CHROME, FIREFOX, IE, CHROME_DOCKER, FIREFOX_DOCKER
     }
 
 
     @BeforeMethod(groups = {"admin", "user"})
     @Parameters({"browser", "testBox", "mobileDevice"})
-    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional("Galaxy S5") String device, Method method) {
+    public void setup(@Optional("chrome") String browser, @Optional("web") String box, @Optional("Galaxy S5") String device, Method method) throws MalformedURLException {
         Reports.start(method.getName());
 
         if (box.equalsIgnoreCase("web")) {
@@ -85,6 +93,18 @@ public class BaseUI {
                         System.setProperty("webdriver.ie.driver", "IEDriverServer");
                         driver = new InternetExplorerDriver();
                         driver.manage().addCookie(new Cookie("test", "test"));
+                        break;
+
+                    case CHROME_DOCKER:
+                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+                        Capabilities chromeCapabilities = DesiredCapabilities.chrome();
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeCapabilities);
+                        break;
+
+                    case FIREFOX_DOCKER:
+                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+                        Capabilities firefoxCapabilities = DesiredCapabilities.firefox();
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), firefoxCapabilities);
                         break;
 
                     default:
@@ -127,6 +147,11 @@ public class BaseUI {
         blog = new BlogPage(driver, wait);
         photos = new PhotosPage(driver, wait);
         howItWorks = new HowItWorks(driver, wait);
+
+        // To enable page factory in main object on Main class
+        // This is not convenient because we have to initialize PageFactory for objects of each class where we want to use it
+        PageFactory.initElements(driver, main);
+
         driver.manage().window().maximize();
         driver.get(Data.MAIN_URL);
 

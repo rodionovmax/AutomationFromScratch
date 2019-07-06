@@ -2,12 +2,16 @@ package com.romanceabroad.ui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 
 public class MainPage extends BaseActions{
 
+    @FindBy(xpath = "//a[@href='https://romanceabroad.com/users/search']")
+    WebElement linkTabSearch;
 
     public MainPage(WebDriver driver, WebDriverWait wait){
         super(driver, wait);
@@ -68,6 +72,11 @@ public class MainPage extends BaseActions{
         if(box.contains("mobile")){
             driver.findElement(Locators.MOBILE_MENU).click();
         }
+    }
+
+    /** Example of using @FindBy */
+    public void clickTabSearch(){
+        linkTabSearch.click();
     }
 
 

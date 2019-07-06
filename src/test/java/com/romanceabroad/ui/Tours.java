@@ -30,6 +30,10 @@ public class Tours extends BaseUI{
 
         Reports.log("Do comparison between current URL and Expected URL: " + Data.EXPECTED_URL_TOURS);
         Assert.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS);
+        soft.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS, "URL is wrong");
+        soft.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS, "URL is wrong");
+        driver.get(Data.MAIN_URL);
+        soft.assertAll();
     }
 
 //    @Test(groups = {"user"})
@@ -40,7 +44,8 @@ public class Tours extends BaseUI{
         wait.until(ExpectedConditions.elementToBeClickable(Locators.TAB_TOURS));
         driver.findElements(Locators.TAB_TOURS).get(Data.INDEX_TOUR).click();
         currentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS);
+//        Assert.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS);
+        soft.assertEquals(currentUrl, Data.EXPECTED_URL_TOURS, "URL is wrong");
     }
 
 }

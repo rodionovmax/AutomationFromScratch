@@ -78,6 +78,14 @@
             <version>4.0.9</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.automation-remarks/video-recorder-testng -->
+        <dependency>
+            <groupId>com.automation-remarks</groupId>
+            <artifactId>video-recorder-testng</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
     </dependencies>
 
 
